@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main>
       <Header />
-
       <div>Carousel</div>
       <FindOutMore />
       <div>Location</div>
