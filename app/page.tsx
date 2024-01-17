@@ -1,11 +1,15 @@
 import Image from 'next/image'
 import Header from './Header'
 import { Carousels } from './Caiousel'
+import Location from './Location'
+import FindOutMore from './FindOutMore'
+
 
 export default function Home() {
   return (
     <main className=''>
       <Header />
+
       <div className=' flex w-full justify-center items-center my-6'>
         {/* <Carousels /> */}
         <Image
@@ -22,6 +26,8 @@ export default function Home() {
       </div>
       <div>Find Out More</div>
       <div>Location</div>
+      <FindOutMore />
+      <Location />
       <div>Offerings</div>
       <div>Gallery</div>
       <div>Footer</div>
