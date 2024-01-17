@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 import {
   Card,
@@ -22,9 +23,12 @@ export function Carousels() {
               <div className='p-1'>
                 <Card>
                   <CardContent className='flex aspect-square items-center justify-center p-6'>
-                    <span className='text-4xl font-semibold'>
-                      {index + 1}
-                    </span>
+                    <Image
+                      src='/assets/logo.svg'
+                      alt='Paroro Logo'
+                      width={200}
+                      height={200}
+                    />
                   </CardContent>
                 </Card>
               </div>
