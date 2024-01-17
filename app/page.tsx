@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Header from './Header'
+import Location from './Location'
 import FindOutMore from './FindOutMore'
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <Header />
       <div>Carousel</div>
       <FindOutMore />
-      <div>Location</div>
+      <Location />
       <div>Offerings</div>
       <div>Gallery</div>
       <div>Footer</div>
