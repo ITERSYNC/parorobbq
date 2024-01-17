@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='w-vw flex h-20 items-center justify-around p-2 mt-6'>
+    <div className='w-vw flex h-40 items-center justify-around p-2 mt-6'>
       <div className='flex gap-6 w-10 whitespace-nowrap'>
         <div>HOME</div>
         <div>ABOUT US</div>
@@ -13,8 +13,8 @@ const Header = () => {
       <Image
         src='/assets/logo.svg'
         alt='Paroro Logo'
-        width={100}
-        height={100}
+        width={200}
+        height={200}
       />
 
       <div className='w-10 whitespace-nowrap'>
