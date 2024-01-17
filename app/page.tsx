@@ -24,8 +24,6 @@ export default function Home() {
           height={300}
         />
       </div>
-      <div>Find Out More</div>
-      <div>Location</div>
       <FindOutMore />
       <Location />
       <div>Offerings</div>
