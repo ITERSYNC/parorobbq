@@ -4,10 +4,7 @@ import * as React from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
 
-import {
-  Card,
-  CardContent,
-} from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import {
   Carousel,
   CarouselContent,
@@ -27,36 +24,32 @@ export function CarouselPlugin() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className='w-1/2'
+      className='w-1/2 mt-24'
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map(
-          (_, index) => (
-            <CarouselItem key={index}>
-              <div className='p-1'>
-                <Card>
-                  <CardContent>
-                    <Image
-                      src={`/assets/gallery${
-                        index + 1
-                      }.jpg`}
-                      alt='Paroro Logo'
-                      sizes='100vw'
-                      style={{
-                        width: '100%',
-                        height: 'auto',
-                      }}
-                      width={500}
-                      height={300}
-                    />
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          )
-        )}
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index}>
+            <div className='p-1'>
+              <Card>
+                <CardContent>
+                  <Image
+                    src={`/assets/gallery${index + 1}.jpg`}
+                    alt='Paroro Logo'
+                    sizes='100vw'
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                    }}
+                    width={500}
+                    height={300}
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
       </CarouselContent>
     </Carousel>
   )
