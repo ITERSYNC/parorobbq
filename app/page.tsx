@@ -3,6 +3,7 @@ import Header from './Header'
 import { Carousels } from './Caiousel'
 import Location from './Location'
 import FindOutMore from './FindOutMore'
+import Offerings from './Offerings'
 import { CarouselPlugin } from './Gallery'
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
       </div>
       <FindOutMore />
       <Location />
-      <div>Offerings</div>
+      <Offerings />
       <div className='flex justify-center items-center'>
         <CarouselPlugin />
       </div>

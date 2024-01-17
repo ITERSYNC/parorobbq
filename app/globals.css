@@ -69,10 +69,10 @@
 @layer base {
   * {
     @apply border-border;
-    color: aliceblue;
-    background-color: black;
   }
   body {
     @apply bg-background text-foreground;
+    color: aliceblue;
+    background-color: black;
   }
 }
