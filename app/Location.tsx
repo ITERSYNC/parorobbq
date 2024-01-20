@@ -7,7 +7,7 @@ function Location() {
       <div className='w-1/2 flex justify-end items-center'>
         <div className='relative w-[500px] h-[500px] rounded-full overflow-hidden'>
           <Image
-            src='/assets/location.jpg'
+            src='/assets/Location.jpg'
             alt='location'
             layout='fill'
             objectFit='cover'

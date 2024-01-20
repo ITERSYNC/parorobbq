@@ -15,7 +15,7 @@ export default function Home() {
       <div className=' flex w-full justify-center items-center my-6'>
         {/* <Carousels /> */}
         <Image
-          src='/assets/hero.jpg '
+          src='/assets/hero.jpg'
           alt='Paroro Logo'
           sizes='100vw'
           style={{
