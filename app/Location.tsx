@@ -9,8 +9,8 @@ function Location() {
           <Image
             src='/assets/location.jpg'
             alt='location'
-            layout='fill'
-            objectFit='cover'
+            width={400}
+            height={400}
           />
         </div>
       </div>
