@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 function Offerings() {
   return (
-    <div className='py-12 text-center bg-white'>
-      <h1 className='font-bold text-5xl tracking-widest text-yellow-500 pb-12'>
+    <div className='md:py-12 text-center bg-white py-24'>
+      <h1 className='font-bold tracking-widest text-yellow-500 pb-12 mobile:text-[20px] ipadV:text-5xl'>
         OUR OFFERINGS
       </h1>
-      <div className=' text-white flex gap-12'>
-        <div className='w-1/2 flex justify-end'>
+      <div className=' text-white flex flex-col justify-center items-center  gap-12 md:flex-row'>
+        <div className='md:w-1/2 flex justify-center md:justify-end'>
           <div className='w-1/2'>
             <div className='inline-block'>
               <Image
@@ -37,7 +37,7 @@ function Offerings() {
             </div>
           </div>
         </div>
-        <div className='w-1/2'>
+        <div className='md:w-1/2 flex justify-center md:justify-start'>
           <div className='w-1/2'>
             <div className='inline-block'>
               <Image
