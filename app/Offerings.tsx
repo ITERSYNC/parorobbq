@@ -4,12 +4,12 @@ import Image from 'next/image'
 function Offerings() {
   return (
     <div className='md:py-12 text-center bg-white py-24'>
-      <h1 className='font-bold tracking-widest text-yellow-500 pb-12 mobile:text-[20px] ipadV:text-5xl'>
+      <h1 className='font-bold tracking-wide text-[#caad66] pb-12 mobile:text-[20px] ipadV:text-5xl'>
         OUR OFFERINGS
       </h1>
       <div className=' text-white flex flex-col justify-center items-center  gap-12 md:flex-row'>
         <div className='md:w-1/2 flex justify-center md:justify-end'>
-          <div className='w-1/2'>
+          <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
                 src='/assets/KoreanBBQ.jpg'
@@ -31,14 +31,14 @@ function Offerings() {
                 to complement the proteins, your meal will be well rounded with
                 a bowl of rice.
               </p>
-              <button className='bg-yellow-500 p-4 w-[200px]'>
+              <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
                 LEARN MORE
               </button>
             </div>
           </div>
         </div>
         <div className='md:w-1/2 flex justify-center md:justify-start'>
-          <div className='w-1/2'>
+          <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
                 src='/assets/Thai.jpg'
@@ -62,7 +62,7 @@ function Offerings() {
                 thinly sliced vegetables such as cucumber, red onions, and bell
                 peppers add crunch and freshness.
               </p>
-              <button className='bg-yellow-500 p-4 w-[200px]'>
+              <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
                 LEARN MORE
               </button>
             </div>

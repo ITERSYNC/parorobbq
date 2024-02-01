@@ -24,7 +24,7 @@ export function CarouselPlugin() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className='w-1/2 mt-24'
+      className='ipadV:w-1/2 mobile:w-full mt-24'
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >

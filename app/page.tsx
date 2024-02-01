@@ -12,7 +12,7 @@ export default function Home() {
     <main className=''>
       <Header />
 
-      <div className='bg-white flex w-full justify-center items-center mt-[180px] mobile:mt-[180px] my-6'>
+      <div className='bg-[#161616] flex w-full justify-center items-center mobile:mt-[210px]'>
         {/* <Carousels /> */}
         <Image
           src='/assets/hero.jpg'
