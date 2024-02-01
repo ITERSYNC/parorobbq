@@ -9,10 +9,10 @@ import Footer from './Footer'
 
 export default function Home() {
   return (
-    <main className='mobile:text-[10px] ipadV:text-[16px]'>
+    <main className=''>
       <Header />
 
-      <div className=' flex w-full justify-center items-center my-6 mobile:my-10'>
+      <div className='bg-white flex w-full justify-center items-center mt-[180px] mobile:mt-[180px] my-6'>
         {/* <Carousels /> */}
         <Image
           src='/assets/hero.jpg'
