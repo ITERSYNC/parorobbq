@@ -12,7 +12,7 @@ function FindOutMore() {
         <div className='md:flex text-[#caad66] gap-40'>
           <div className='flex flex-col items-center'>
             <Image
-              src='/assets/baby.jpg'
+              src='/assets/Baby.jpg'
               alt='Paroro Logo'
               width={100}
               height={100}
