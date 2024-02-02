@@ -8,7 +8,7 @@ import { GrSchedule } from 'react-icons/gr'
 function Details() {
   return (
     <div className='flex justify-center items-center py-14 bg-[#161616]'>
-      <div className='text-left md:text-left flex justify-center items-center'>
+      <div className='text-left md:text-left flex flex-col justify-center items-center'>
         <div className='w-4/5 ipadV:w-1/2 text-xl text-[#caad66] whitespace-nowrap gap-4'>
           <Image
             src='/assets/logo.svg'
