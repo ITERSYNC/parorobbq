@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { FaLocationDot } from 'react-icons/fa6'
 import { FaPhoneSquareAlt } from 'react-icons/fa'
 import { FaDollarSign } from 'react-icons/fa'
@@ -6,9 +7,15 @@ import { GrSchedule } from 'react-icons/gr'
 
 function Details() {
   return (
-    <div className='flex flex-col justify-center items-center py-14 bg-[#161616]'>
+    <div className='flex justify-center items-center py-14 bg-[#161616]'>
       <div className='text-left md:text-left '>
         <div className='w-4/5 ipadV:w-1/2 text-xl text-[#caad66] whitespace-nowrap gap-4'>
+          <Image
+            src='/assets/logo.svg'
+            alt='Paroro Logo'
+            width={500}
+            height={500}
+          />
           <p>
             <FaLocationDot className='inline mb-1' /> Elizabth st, Melbourne,
             3000{' '}
