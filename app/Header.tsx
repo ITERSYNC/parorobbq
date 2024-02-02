@@ -20,14 +20,14 @@ export default function Header() {
   }, [])
 
   return (
-    <div className='w-full mb-20 mx-auto shadow fixed top-0 z-50 ipadV:px-80 mobile:px-7 bg-[#161616]'>
-      <div className='justify-between py-4 md:items-center md:flex'>
+    <div className='w-full mb-20 mx-auto shadow fixed top-0 z-50 ipadV: mobile:px-7 bg-[#161616]'>
+      <div className='justify-evenly py-4 md:items-center md:flex'>
         <div className='flex items-center justify-center text-2xl'>
           <Image
             src='/assets/logo.svg'
             alt='Paroro Logo'
-            width={isScrolled ? 80 : 180}
-            height={isScrolled ? 80 : 180}
+            width={isScrolled ? 60 : 180}
+            height={isScrolled ? 60 : 180}
             className='transition-all duration-500 ease-in-out'
           />
         </div>
@@ -50,13 +50,13 @@ export default function Header() {
               <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
                 HOME
               </div>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
                 ABOUT US
               </div>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
                 LOCATION
               </div>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
                 CONTACT US
               </div>
             </div>

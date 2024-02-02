@@ -17,7 +17,7 @@ function Location() {
         </div>
 
         <div className='w-4/5 flex justify-center md:px-[4%]'>
-          <div className='flex flex-col justify-center gap-6'>
+          <div className='flex flex-col justify-center gap-6 mobile:text-center md:text-left'>
             <h1 className='text-[#caad66] md:font-bold mobile:text-[20px] ipadV:text-5xl'>
               CRAFTING THE ULTIMATE DINING EXPERIENCE
             </h1>
@@ -29,9 +29,11 @@ function Location() {
               adventurous diners. Regardless of your preferences, we have
               something for everyone.
             </p>
-            <button className='mt-4 bg-[#caad66] hover:bg-[#dbc87c] rounded p-5 '>
-              OUR LOCATION
-            </button>
+            <div>
+              <button className='mt-4 bg-[#caad66] hover:bg-[#dbc87c] rounded p-5 w-[200px]'>
+                OUR LOCATION
+              </button>
+            </div>
           </div>
         </div>
       </div>
