@@ -20,7 +20,7 @@ function Details() {
         </div>
       </div>
       <div className='flex justify-center'>
-        <div className='w-[200px]'>
+        <div className='w-[230px]'>
           <div className='text-[20px]'>Opening Hours</div>
           <div className='flex justify-between'>
             <div>Monday</div> <div>17:30-22:30</div>
