@@ -24,7 +24,7 @@ function FindOutMore() {
           </div>
           <div className='flex flex-col items-center my-8 md:my-0'>
             <Image
-              src='/assets/children.jpg'
+              src='/assets/Children.jpg'
               alt='Paroro Logo'
               width={100}
               height={100}
@@ -36,7 +36,7 @@ function FindOutMore() {
           </div>
           <div className='flex flex-col items-center'>
             <Image
-              src='/assets/adult.png'
+              src='/assets/Adult.png'
               alt='Paroro Logo'
               width={100}
               height={100}

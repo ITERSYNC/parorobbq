@@ -44,7 +44,7 @@ function Offerings() {
           <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
-                src='/assets/thai.jpg'
+                src='/assets/Thai.jpg'
                 alt='Thai-style ceviche'
                 width={400}
                 height={400}
