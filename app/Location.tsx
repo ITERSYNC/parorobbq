@@ -9,7 +9,7 @@ function Location() {
         <div className='w-4/5 flex justify-center  '>
           <div className='relative aspect-square w-4/5 h-auto overflow-hidden rounded-full mb-8 md:mb-0'>
             <Image
-              src='/assets/Location.jpg'
+              src='/assets/location.jpg'
               alt='location'
               layout='fill'
               objectFit='cover'

@@ -13,7 +13,7 @@ function Offerings() {
           <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
-                src='/assets/KoreanBBQ.jpg'
+                src='/assets/korean-bbq.jpg'
                 alt='KoreanBBQ'
                 width={400}
                 height={400}
@@ -44,7 +44,7 @@ function Offerings() {
           <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
-                src='/assets/Thai.jpg'
+                src='/assets/thai.jpg'
                 alt='Thai-style ceviche'
                 width={400}
                 height={400}

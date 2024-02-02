@@ -36,7 +36,7 @@ function FindOutMore() {
           </div>
           <div className='flex flex-col items-center'>
             <Image
-              src='/assets/Adult.png'
+              src='/assets/adult.png'
               alt='Paroro Logo'
               width={100}
               height={100}
