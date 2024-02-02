@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   const [header, setHeader] = useState(false)
@@ -47,18 +48,26 @@ export default function Header() {
         >
           <div className='gap-14 text-end space-y-4 pt-2 md:space-y-0'>
             <div className='justify-end md:flex gap-10'>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
-                HOME
-              </div>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
-                ABOUT US
-              </div>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
-                LOCATION
-              </div>
-              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
-                CONTACT US
-              </div>
+              <Link href='#header'>
+                <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
+                  HOME
+                </div>
+              </Link>
+              <Link href='#location'>
+                <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
+                  ABOUT US
+                </div>
+              </Link>
+              <Link href='#detail'>
+                <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
+                  LOCATION
+                </div>
+              </Link>
+              <Link href='#detail'>
+                <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
+                  CONTACT US
+                </div>
+              </Link>
             </div>
           </div>
         </div>

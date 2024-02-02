@@ -12,28 +12,23 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <main>
-      <Header />
-
-      <div className='bg-[#161616] flex w-full justify-center items-center mobile:mt-[210px]'>
-        {/* <Carousels /> */}
-        <Image
-          src='/assets/hero.jpg'
-          alt='Paroro Logo'
-          sizes='100vw'
-          style={{
-            width: '100%',
-            height: 'auto',
-          }}
-          width={500}
-          height={300}
-        />
+      <div id='header'>
+        <Header />
       </div>
+      <div className='relative'>
+        <div className="h-[1000px] bg-[url('/assets/hero.jpg')] bg-fixed bg-cover bg-center"></div>
+      </div>
+
       <FindOutMore />
-      <Details />
-      <Location />
+      <div id='location'>
+        <Location />
+      </div>
       <Offerings />
       <div className='flex justify-center items-center'>
         <CarouselPlugin />
+      </div>
+      <div id='detail'>
+        <Details />
       </div>
       <Footer />
     </main>

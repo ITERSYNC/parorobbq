@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Location() {
   return (
@@ -29,11 +30,11 @@ function Location() {
               adventurous diners. Regardless of your preferences, we have
               something for everyone.
             </p>
-            <div>
+            <Link href='#detail'>
               <button className='mt-4 bg-[#caad66] hover:bg-[#dbc87c] rounded p-5 w-[200px]'>
                 OUR LOCATION
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
