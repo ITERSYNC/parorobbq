@@ -73,6 +73,6 @@
   body {
     @apply bg-background text-foreground;
     color: aliceblue;
-    background-color: black;
+    background-color: #161616;
   }
 }

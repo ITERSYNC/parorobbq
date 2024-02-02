@@ -1,31 +1,68 @@
+'use client'
+import { useState, useEffect } from 'react'
+import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import Image from 'next/image'
-import React from 'react'
 
-const Header = () => {
+export default function Header() {
+  const [header, setHeader] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <div className='w-vw flex h-40 items-center justify-around ipadV:p-2 ipadV:mt-6 mobile:p-0 mobile:mx-2 mobile:text-[8px] ipadV:text-[18px]'>
-      <div className='gap-6 w-10 whitespace-nowrap ipadV:flex '>
-        <div>HOME</div>
-        <div>ABOUT US</div>
-        <div>LOCATION</div>
-        <div className=' ipadV:hidden mobile:block'>
-          CONTACT US
+    <div className='w-full mb-20 mx-auto shadow fixed top-0 z-50 ipadV: mobile:px-7 bg-[#161616]'>
+      <div className='justify-evenly py-4 md:items-center md:flex'>
+        <div className='flex items-center justify-center text-2xl'>
+          <Image
+            src='/assets/logo.svg'
+            alt='Paroro Logo'
+            width={isScrolled ? 60 : 180}
+            height={isScrolled ? 60 : 180}
+            className='transition-all duration-500 ease-in-out'
+          />
         </div>
-      </div>
-      <div className='mobile:w-[100px] ipadV:w-auto'>
-        <Image
-          src='/assets/logo.svg'
-          alt='Paroro Logo'
-          width={200}
-          height={200}
-        />
-      </div>
-
-      <div className='w-10 whitespace-nowrap mobile:hidden ipadV:block'>
-        CONTACT US
+        <div className='flex justify-end ipadV:hidden'>
+          <button onClick={() => setHeader(!header)}>
+            {header ? (
+              <IoMdClose className='hover:text-[#dbc87c]' />
+            ) : (
+              <IoMdMenu className='hover:text-[#dbc87c]' />
+            )}
+          </button>
+        </div>
+        <div
+          className={`ipadV:block transition-all transform duration-300 ${
+            !header && 'hidden'
+          }`}
+        >
+          <div className='gap-14 text-end space-y-4 pt-2 md:space-y-0'>
+            <div className='justify-end md:flex gap-10'>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer'>
+                HOME
+              </div>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
+                ABOUT US
+              </div>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
+                LOCATION
+              </div>
+              <div className='hover:text-[#dbc87c] hover:scale-105 duration-300 cursor-pointer text-nowrap'>
+                CONTACT US
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
-
-export default Header
