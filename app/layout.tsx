@@ -21,13 +21,14 @@ export default function RootLayout({
       <Head>
         {/* Update the title to include keywords "Australia's best" and "Melbourne's best Korean BBQ" */}
         <title>
-          Melbourne&apos;s Best Korean BBQ | Paroro
-          Korean BBQ | Australia&apos;s Top Choice
+          Melbourne&apos;s Best Korean BBQ |
+          Paroro Korean BBQ | Australia&apos;s Top
+          Choice
         </title>
         {/* Add meta description with keywords for better searchability */}
         <meta
           name='description'
-          content='Discover Melbourne&apos;s best Korean BBQ experience at Paroro Korean BBQ. Enjoy the finest Korean cuisine in the heart of Australia. Visit us now!'
+          content="Discover Melbourne's best Korean BBQ experience at Paroro Korean BBQ. Enjoy the finest Korean cuisine in the heart of Australia. Visit us now!"
         />
         {/* Add additional meta tags for SEO optimization */}
         <meta
@@ -36,7 +37,7 @@ export default function RootLayout({
         />
         <meta
           property='og:title'
-          content='Melbourne&apos;s Best Korean BBQ | Paroro Korean BBQ'
+          content="Melbourne's Best Korean BBQ | Paroro Korean BBQ"
         />
         <meta
           property='og:description'
@@ -60,6 +61,7 @@ export default function RootLayout({
           name='viewport'
           content='width=device-width, initial-scale=1.0'
         />
+        <link rel='icon' href='/assets/logo.svg' />
       </Head>
       <body className={inter.className}>
         {children}
