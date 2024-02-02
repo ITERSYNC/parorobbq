@@ -6,7 +6,7 @@ function FindOutMore() {
     <div className=' text-center flex justify-center py-14 bg-white'>
       <div className='w-4/5 ipadV:w-1/2 flex flex-col gap-10 items-center'>
         <h1 className='text-5xl text-[#caad66] font-bold mobile:text-[20px] ipadV:text-5xl md:w-[1000px]'>
-          Our Pricing <br />
+          OUR PRICING <br />
           <br /> PARORO KOREAN BBQ
         </h1>
         <div className='md:flex text-[#caad66] gap-40'>
