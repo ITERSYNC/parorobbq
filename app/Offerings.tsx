@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Offerings() {
   return (
@@ -31,9 +32,11 @@ function Offerings() {
                 to complement the proteins, your meal will be well rounded with
                 a bowl of rice.
               </p>
-              <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
-                LEARN MORE
-              </button>
+              <Link href='#location'>
+                <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
+                  LEARN MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -62,9 +65,11 @@ function Offerings() {
                 thinly sliced vegetables such as cucumber, red onions, and bell
                 peppers add crunch and freshness.
               </p>
-              <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
-                LEARN MORE
-              </button>
+              <Link href='#location'>
+                <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
+                  LEARN MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>

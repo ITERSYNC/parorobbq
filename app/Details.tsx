@@ -7,34 +7,42 @@ import { GrSchedule } from 'react-icons/gr'
 
 function Details() {
   return (
-    <div className='flex justify-center items-center py-14 bg-[#161616]'>
-      <div className='text-left md:text-left flex flex-col justify-center items-center'>
-        <div className='w-4/5 ipadV:w-1/2 text-xl text-[#caad66] whitespace-nowrap gap-4'>
-          <Image
-            src='/assets/logo.svg'
-            alt='Paroro Logo'
-            width={500}
-            height={500}
-          />
-          <p>
-            <FaLocationDot className='inline mb-1' /> Elizabth st, Melbourne,
-            3000{' '}
-          </p>
-          <p>
-            <FaPhoneSquareAlt className='inline mb-1' /> 0484-636-478
-          </p>
+    <div className='bg-[#161616] justify-center text-center md:text-left md:flex md:gap-16'>
+      <div>
+        <div className='text-[20px]'>Contact Us</div>
+        <div>0484 636 478</div>
+      </div>
+      <div className='my-6 md:my-0'>
+        <div className='text-[20px]'>Address</div>
+        <div>
+          level 1, 315 Elizabth St
+          <br /> Melbourne, VIC, 3000
         </div>
-        <div className='w-4/5 ipadV:w-1/2 text-xl text-[#caad66] whitespace-nowrap gap-4'>
-          <p>
-            <GrSchedule className='inline mb-1' /> Sun-Wed: 5:30PM - 10:30PM
-          </p>
-          <p>
-            <GrSchedule className='inline mb-1 text-[#161616]' />
-            Thur-Sat: 5:30PM - 01:00AM
-          </p>
-        </div>
-        <div className='w-4/5 ipadV:w-1/2 text-xl text-[#caad66] whitespace-nowrap gap-4'>
-          <p>$49.95 (Kids 3-12yrs $24.95)</p>
+      </div>
+      <div className='flex justify-center'>
+        <div className='w-[200px]'>
+          <div className='text-[20px]'>Opening Hours</div>
+          <div className='flex justify-between'>
+            <div>Monday</div> <div>17:30-22:30</div>
+          </div>
+          <div className='flex justify-between'>
+            <div>Tuesday</div> <div>17:30-22:30</div>
+          </div>
+          <div className='flex justify-between'>
+            <div>Wednesday</div> <div>17:30-22:30</div>
+          </div>
+          <div className='flex justify-between'>
+            <div>Thursday</div> <div>17:30-01:00</div>
+          </div>
+          <div className='flex justify-between'>
+            <div>Friday</div> <div>17:30-01:00</div>
+          </div>
+          <div className='flex justify-between'>
+            <div>Saturday</div> <div>17:30-01:00</div>
+          </div>
+          <div className='flex justify-between'>
+            <div>Sunday</div> <div>17:30-22:30</div>
+          </div>
         </div>
       </div>
     </div>
