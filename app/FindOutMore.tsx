@@ -16,8 +16,11 @@ function FindOutMore() {
               alt='Paroro Logo'
               width={100}
               height={100}
+              className='opacity-75'
             />
-            <p className='text-2xl font-bold'>0y~3y</p>
+            <p className='text-2xl font-bold'>
+              0y~3y
+            </p>
             <p className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-3 w-[80px] text-white'>
               FREE
             </p>
@@ -28,8 +31,11 @@ function FindOutMore() {
               alt='Paroro Logo'
               width={100}
               height={100}
+              className='opacity-75'
             />
-            <p className='text-2xl font-bold'>4y~12y</p>
+            <p className='text-2xl font-bold'>
+              4y~12y
+            </p>
             <p className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-3 w-[80px] text-white'>
               $24.95
             </p>
@@ -40,8 +46,11 @@ function FindOutMore() {
               alt='Paroro Logo'
               width={100}
               height={100}
+              className='opacity-75'
             />
-            <p className='text-2xl font-bold'>Adult</p>
+            <p className='text-2xl font-bold'>
+              Adult
+            </p>
             <p className='bg-[#caad66] hover:bg-[#dbc87c]  rounded p-3 w-[80px] text-white'>
               $49.95
             </p>

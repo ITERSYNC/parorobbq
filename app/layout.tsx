@@ -48,7 +48,7 @@ export default function RootLayout({
         />
         <meta
           property='og:url'
-          content='YOUR_WEBSITE_URL'
+          content='www.paroro.com.au'
         />
         <meta
           property='og:image'

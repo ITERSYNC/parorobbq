@@ -16,7 +16,7 @@ export default function Home() {
         <Header />
       </div>
       <div className='relative'>
-        <div className="h-[1000px] bg-[url('/assets/hero.jpg')] bg-fixed bg-cover bg-center"></div>
+        <div className=" h-[300px] md:h-[1000px] bg-[url('/assets/hero.jpg')] bg-fixed bg-cover bg-center"></div>
       </div>
 
       <FindOutMore />
