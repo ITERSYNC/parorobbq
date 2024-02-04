@@ -20,15 +20,21 @@ function Location() {
         <div className='w-4/5 flex justify-center md:px-[4%]'>
           <div className='flex flex-col justify-center gap-6 mobile:text-center md:text-left'>
             <h1 className='text-[#caad66] md:font-bold mobile:text-[20px] ipadV:text-5xl'>
-              CRAFTING THE ULTIMATE DINING EXPERIENCE
+              CRAFTING THE ULTIMATE DINING
+              EXPERIENCE
             </h1>
             <p className='text-gray-500'>
-              Since its founding in 2010, our brand has been serving a Chinese
-              hot pot and Korean barbecue experience unlike any other. We
-              operate on three core values: quality, service, and affordability.
-              Our wide range of spices and sauces cater to even the most
-              adventurous diners. Regardless of your preferences, we have
-              something for everyone.
+              Since its inception in 2024, our
+              brand has been delivering a Korean
+              BBQ buffet experience unparalleled
+              in the industry. We adhere to three
+              fundamental principles: quality,
+              service, and affordability. Our
+              extensive selection of spices and
+              sauces is designed to satisfy even
+              the most daring palates. No matter
+              your taste preferences, we offer
+              something for every diner.
             </p>
             <Link href='#detail'>
               <button className='mt-4 bg-[#caad66] hover:bg-[#dbc87c] rounded p-5 w-[200px]'>
