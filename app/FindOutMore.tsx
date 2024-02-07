@@ -34,10 +34,10 @@ function FindOutMore() {
               className='opacity-75'
             />
             <p className='text-2xl font-bold'>
-              4y~12y
+              4y~10y
             </p>
             <p className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-3 w-[80px] text-white'>
-              $24.95
+              $29.90
             </p>
           </div>
           <div className='flex flex-col items-center'>
