@@ -9,10 +9,16 @@ function Offerings() {
         OUR OFFERINGS
       </h1>
       <div className=' text-white flex flex-col justify-center items-center  gap-12 md:flex-row'>
-        <div className='md:w-1/2 flex justify-center md:justify-end'>
+        <div className='md:w-1/2 flex justify-center '>
           <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
+                src='/assets/poster.png'
+                alt='KoreanBBQ'
+                width={400}
+                height={400}
+              />
+              {/* <Image
                 src='/assets/korean-bbq.jpg'
                 alt='KoreanBBQ'
                 width={400}
@@ -31,7 +37,7 @@ function Offerings() {
                 an array of side dishes made of vegetables (banchan in Korean)
                 to complement the proteins, your meal will be well rounded with
                 a bowl of rice.
-              </p>
+              </p> */}
               <Link href='#location'>
                 <button className='bg-[#caad66] hover:bg-[#dbc87c] rounded p-4 w-[200px]'>
                   LEARN MORE
@@ -40,7 +46,7 @@ function Offerings() {
             </div>
           </div>
         </div>
-        <div className='md:w-1/2 flex justify-center md:justify-start'>
+        {/* <div className='md:w-1/2 flex justify-center md:justify-start'>
           <div className='ipadV:w-1/2 mobile:w-4/5'>
             <div className='inline-block'>
               <Image
@@ -72,7 +78,7 @@ function Offerings() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
