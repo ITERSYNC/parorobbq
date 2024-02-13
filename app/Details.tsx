@@ -32,13 +32,13 @@ function Details() {
             <div>Wednesday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Thursday</div> <div>17:30-01:00</div>
+            <div>Thursday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Friday</div> <div>17:30-01:00</div>
+            <div>Friday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Saturday</div> <div>17:30-01:00</div>
+            <div>Saturday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
             <div>Sunday</div> <div>17:30-22:30</div>
