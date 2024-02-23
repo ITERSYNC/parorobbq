@@ -6,9 +6,8 @@ import Head from 'next/head'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Paroro Korean BBQ',
-  description:
-    'Melbourne’s best Korean BBQ restaurant',
+  title: 'Paroro Korean BBQ | Melbourne Best Korean BBQ Buffet',
+  description: 'Melbourne’s best Korean BBQ restaurant',
 }
 
 export default function RootLayout({
@@ -21,9 +20,8 @@ export default function RootLayout({
       <Head>
         {/* Update the title to include keywords "Australia's best" and "Melbourne's best Korean BBQ" */}
         <title>
-          Melbourne&apos;s Best Korean BBQ |
-          Paroro Korean BBQ | Australia&apos;s Top
-          Choice
+          Melbourne&apos;s Best Korean BBQ | Paroro Korean BBQ |
+          Australia&apos;s Top Choice
         </title>
         {/* Add meta description with keywords for better searchability */}
         <meta
@@ -43,29 +41,18 @@ export default function RootLayout({
           property='og:description'
           content='Experience the top Korean BBQ in Melbourne, Australia at Paroro Korean BBQ. Authentic Korean cuisine awaits you.'
         />
-        <meta
-          property='og:type'
-          content='website'
-        />
-        <meta
-          property='og:url'
-          content='www.paroro.com.au'
-        />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='www.paroro.com.au' />
         <meta
           property='og:image'
           content='URL_TO_AN_IMAGE_OF_YOUR_RESTAURANT'
         />
         {/* Include charset and viewport for better SEO and responsiveness */}
         <meta charSet='UTF-8' />
-        <meta
-          name='viewport'
-          content='width=device-width, initial-scale=1.0'
-        />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel='icon' href='/assets/logo.svg' />
       </Head>
-      <body className={inter.className}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
