@@ -23,25 +23,25 @@ function Details() {
         <div className='w-[230px]'>
           <div className='text-[20px]'>Opening Hours</div>
           <div className='flex justify-between'>
-            <div>Monday</div> <div>17:30-20:30</div>
+            <div>Monday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Tuesday</div> <div>17:30-20:30</div>
+            <div>Tuesday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Wednesday</div> <div>17:30-20:30</div>
+            <div>Wednesday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Thursday</div> <div>17:30-20:30</div>
+            <div>Thursday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Friday</div> <div>17:30-20:30</div>
+            <div>Friday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Saturday</div> <div>17:30-20:30</div>
+            <div>Saturday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
-            <div>Sunday</div> <div>17:30-20:30</div>
+            <div>Sunday</div> <div>17:30-22:30</div>
           </div>
         </div>
       </div>
