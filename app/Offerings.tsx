@@ -12,6 +12,18 @@ function Offerings() {
           <div className='ipadV:w-full mobile:w-4/5'>
             <div className='inline-block'>
               <Image
+                src='/assets/poster.jpg'
+                alt='KoreanBBQ'
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
+        {/* <div className='md:w-1/2 flex justify-center '>
+          <div className='ipadV:w-full mobile:w-4/5'>
+            <div className='inline-block'>
+              <Image
                 src='/assets/korean-bbq.jpg'
                 alt='KoreanBBQ'
                 width={400}
@@ -102,7 +114,7 @@ function Offerings() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
