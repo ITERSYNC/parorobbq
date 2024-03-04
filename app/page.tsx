@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Head from 'next/head'
 import Hero from '@/components/ui/Hero'
 import Navbar from '@/components/ui/Navbar'
+import InfiniteCarousel from '@/components/ui/InfiniteCarousel'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar />
       </div>
       <Hero />
+      <InfiniteCarousel />
 
       <FindOutMore />
       <div id='location'>

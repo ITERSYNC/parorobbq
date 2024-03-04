@@ -38,7 +38,7 @@ const Navbar = () => {
     <div
       className={`fixed top-0 z-[40] w-full h-${
         isScrolled ? '[60px]' : '[100px]'
-      } bg-transparent flex justify-between items-center px-10 md:px-20 transition-all duration-300 ease-in-out bg-[#161611]`}
+      } flex justify-between items-center px-10 md:px-20 transition-all duration-300 ease-in-ou bg-gradient-to-b from-black to-[#161616] to-99%`}
     >
       <div className='flex flex-row gap-3 items-center'>
         <div className='relative'>
