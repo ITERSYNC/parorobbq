@@ -78,7 +78,7 @@ function InfiniteCarousel() {
         </ul>
         <ul className='rightToLeft flex text-nowrap gap-20'>
           {extendedList.map(({ name, image }, index) => (
-            <li key={index}>
+            <li key={index} className='flex items-center justify-center'>
               {image && (
                 <Image
                   src={image}
