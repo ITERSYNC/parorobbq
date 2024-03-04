@@ -20,20 +20,6 @@ const Navbar = () => {
     }
   }, [])
 
-  const Socials = [
-    {
-      name: 'Discord',
-      src: '/instagram.svg',
-    },
-    {
-      name: 'Facebook',
-      src: '/facebook.svg',
-    },
-    {
-      name: 'Instagram',
-      src: '/discord.svg',
-    },
-  ]
   return (
     <div
       className={`fixed top-0 z-[40] w-full h-${

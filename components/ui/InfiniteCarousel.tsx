@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger)
 gsap.defaults({ overwrite: true })
 
 function InfiniteCarousel() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+
   const listItems = [
     { name: 'meat', image: '/assets/meat.png' },
     { name: 'seafood', image: '/assets/seafood.png' },
@@ -16,6 +18,17 @@ function InfiniteCarousel() {
   ]
 
   const extendedList = [...listItems, ...listItems, ...listItems, ...listItems]
+  const logoSize = isMobile ? 40 : 60
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     gsap.fromTo(
@@ -54,8 +67,8 @@ function InfiniteCarousel() {
                   src={image}
                   alt={`${name} icon`}
                   className='inline-block mr-2'
-                  width={50}
-                  height={50}
+                  width={logoSize}
+                  height={logoSize}
                 />
               )}
 
@@ -71,8 +84,8 @@ function InfiniteCarousel() {
                   src={image}
                   alt={`${name} icon`}
                   className='inline-block mr-2'
-                  width={50}
-                  height={50}
+                  width={logoSize}
+                  height={logoSize}
                 />
               )}
               {name}
