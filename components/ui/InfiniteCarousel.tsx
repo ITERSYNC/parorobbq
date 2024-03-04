@@ -14,31 +14,31 @@ function InfiniteCarousel() {
     { name: 'all you can eat' },
   ]
 
-  useEffect(() => {
-    gsap.fromTo(
-      '.leftToRight',
-      {
-        xPercent: -150,
-      },
-      {
-        xPercent: 0,
-        ease: 'none',
-        duration: 30,
-        repeat: -1,
-      }
-    )
-  }, [])
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     '.leftToRight',
+  //     {
+  //       xPercent: -150,
+  //     },
+  //     {
+  //       xPercent: 0,
+  //       ease: 'none',
+  //       duration: 30,
+  //       repeat: -1,
+  //     }
+  //   )
+  // }, [])
 
-  useEffect(() => {
-    gsap
-      .to('.rightToLeft', {
-        xPercent: -150,
-        duration: 30,
-        ease: 'none',
-        repeat: -1,
-      })
-      .timeScale(1)
-  }, [])
+  // useEffect(() => {
+  //   gsap
+  //     .to('.rightToLeft', {
+  //       xPercent: -150,
+  //       duration: 30,
+  //       ease: 'none',
+  //       repeat: -1,
+  //     })
+  //     .timeScale(1)
+  // }, [])
 
   return (
     <div className='flex justify-center items-center'>
