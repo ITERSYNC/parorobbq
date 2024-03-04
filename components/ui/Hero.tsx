@@ -65,10 +65,10 @@ export default function Hero() {
 
   return (
     <div className="flex flex-col items-center justify-between relative px-0 mt-[200px] bg-[url('/assets/heroBackground.jpeg')] bg-fixed bg-cover">
-      <div className='mx-auto w-full'>
+      <div className='mx-auto '>
         <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center '>
           <div className='col-start-1 md:row-start-1 px-10 lg:px-6 md:px-4'>
-            <h1 className='mb-8 text-[clamp(2rem,10vmin,10rem)] font-extrabold leading-none tracking-tighter'>
+            <h1 className='mb-8 text-[clamp(2rem,10vmin,10rem)] font-extrabold leading-none tracking-tighter text-nowrap'>
               <span className='block bg-gradient-to-r from bg-yellow-200 via-yellow-50 to-yellow-200 bg-clip-text'>
                 {renderLetters('PARORO', 'first')}
               </span>
