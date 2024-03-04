@@ -10,6 +10,7 @@ import Head from 'next/head'
 import Hero from '@/components/ui/Hero'
 import Navbar from '@/components/ui/Navbar'
 import InfiniteCarousel from '@/components/ui/InfiniteCarousel'
+import gsap from 'gsap'
 
 export default function Home() {
   return (

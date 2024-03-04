@@ -17,16 +17,18 @@ function InfiniteCarousel() {
     { name: 'eat' },
   ]
 
+  const extendedList = [...listItems, ...listItems, ...listItems, ...listItems]
+
   useEffect(() => {
     gsap.fromTo(
       '.leftToRight',
       {
-        xPercent: -150,
+        xPercent: -100,
       },
       {
         xPercent: 0,
         ease: 'none',
-        duration: 30,
+        duration: 45,
         repeat: -1,
       }
     )
@@ -36,7 +38,7 @@ function InfiniteCarousel() {
     gsap
       .to('.rightToLeft', {
         xPercent: -150,
-        duration: 30,
+        duration: 45,
         ease: 'none',
         repeat: -1,
       })
@@ -47,20 +49,30 @@ function InfiniteCarousel() {
     <div className='flex justify-center items-center'>
       <div className='lg:text-[60px] text-[40px] font-extrabold uppercase overflow-hidden'>
         <ul className='leftToRight flex text-nowrap gap-5 md:gap-20'>
-          {listItems.map(({ name }) => {
-            return <li key={name}>{name}</li>
-          })}
-          {listItems.map(({ name }) => {
-            return <li key={name}>{name}</li>
-          })}
+          {extendedList.map(({ name }, index) => (
+            <li
+              key={index}
+              className={`${
+                (name === 'you' || name === 'can' || name === 'eat') &&
+                '-ml-3 md:-ml-16'
+              }`}
+            >
+              {name}
+            </li>
+          ))}
         </ul>
         <ul className='rightToLeft flex text-nowrap gap-5 md:gap-20'>
-          {listItems.map(({ name }) => {
-            return <li key={name}>{name}</li>
-          })}
-          {listItems.map(({ name }) => {
-            return <li key={name}>{name}</li>
-          })}
+          {extendedList.map(({ name }, index) => (
+            <li
+              key={index}
+              className={`${
+                (name === 'you' || name === 'can' || name === 'eat') &&
+                '-ml-3 md:-ml-16'
+              }`}
+            >
+              {name}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
