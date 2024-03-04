@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Header from './Header'
 import { Carousels } from './Caiousel'
 import Location from './Location'
 import FindOutMore from './FindOutMore'
@@ -9,12 +8,13 @@ import { CarouselPlugin } from './Gallery'
 import Footer from './Footer'
 import Head from 'next/head'
 import Hero from '@/components/ui/Hero'
+import Navbar from '@/components/ui/Navbar'
 
 export default function Home() {
   return (
     <main>
       <div id='header'>
-        <Header />
+        <Navbar />
       </div>
       <Hero />
 

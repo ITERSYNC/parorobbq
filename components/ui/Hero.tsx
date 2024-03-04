@@ -64,8 +64,8 @@ export default function Hero() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-between relative px-0 mt-[200px] bg-[url('/assets/heroBackground.jpeg')] bg-fixed bg-cover">
-      <div className='mx-auto '>
+    <div className="flex flex-col items-center justify-between relative px-0 mt-[100px] bg-[url('/assets/heroBackground.jpeg')] bg-fixed bg-cover">
+      <div className='mx-auto'>
         <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center '>
           <div className='col-start-1 md:row-start-1 px-10 lg:px-6 md:px-4'>
             <h1 className='mb-8 text-[clamp(2rem,10vmin,10rem)] font-extrabold leading-none tracking-tighter text-nowrap'>
