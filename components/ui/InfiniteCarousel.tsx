@@ -8,7 +8,8 @@ gsap.registerPlugin(ScrollTrigger)
 gsap.defaults({ overwrite: true })
 
 function InfiniteCarousel() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+  const [isMobile, setIsMobile] = useState(false)
+  const logoSize = isMobile ? 40 : 60
 
   const listItems = [
     { name: 'meat', image: '/assets/meat.png' },
@@ -18,7 +19,6 @@ function InfiniteCarousel() {
   ]
 
   const extendedList = [...listItems, ...listItems, ...listItems, ...listItems]
-  const logoSize = isMobile ? 40 : 60
 
   useEffect(() => {
     const handleResize = () => {
