@@ -42,8 +42,8 @@ function InfiniteCarousel() {
 
   return (
     <div className='flex justify-center items-center'>
-      <div className='text-nowrap text-[60px] font-extrabold uppercase overflow-hidden'>
-        <ul className='leftToRight flex gap-20'>
+      <div className='text-[60px] font-extrabold uppercase overflow-hidden'>
+        <ul className='leftToRight flex gap-20 text-nowrap'>
           {listItems.map(({ name }) => {
             return <li key={name}>{name}</li>
           })}
@@ -51,7 +51,7 @@ function InfiniteCarousel() {
             return <li key={name}>{name}</li>
           })}
         </ul>
-        <ul className='rightToLeft flex gap-20'>
+        <ul className='rightToLeft flex gap-20 text-nowrap'>
           {listItems.map(({ name }) => {
             return <li key={name}>{name}</li>
           })}
