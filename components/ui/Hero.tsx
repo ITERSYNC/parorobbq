@@ -66,7 +66,6 @@ export default function Hero() {
       document.addEventListener('mousemove', mouseMoveHandler)
 
       return () => {
-        // Remove event listener on component unmount
         document.removeEventListener('mousemove', mouseMoveHandler)
       }
     }
@@ -88,9 +87,9 @@ export default function Hero() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-between relative px-0 mt-[100px] bg-[url('/assets/heroBackgroundSmall.jpg')] md:bg-[url('/assets/heroBackground.jpeg')] bg-fixed bg-cover">
+    <div className="flex flex-col items-center justify-between relative px-0 mt-[100px] bg-[url('/assets/heroBackgroundSmall.jpg')] md:bg-[url('/assets/heroBackground.jpeg')] sm:bg-left-bottom bg-fixed bg-cover">
       <div id='movingElement' className='mx-auto'>
-        <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center '>
+        <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center'>
           <div className='col-start-1 md:row-start-1 px-10 lg:px-6 md:px-4'>
             <h1 className='mb-8 text-[clamp(2rem,10vmin,10rem)] font-extrabold leading-none tracking-tighter text-nowrap'>
               <span className='block bg-gradient-to-r from bg-yellow-200 via-yellow-50 to-yellow-200 bg-clip-text'>

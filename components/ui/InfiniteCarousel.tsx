@@ -71,7 +71,6 @@ function InfiniteCarousel() {
                   height={logoSize}
                 />
               )}
-
               {name}
             </li>
           ))}
