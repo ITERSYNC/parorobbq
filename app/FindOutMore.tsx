@@ -50,12 +50,12 @@ function FindOutMore() {
                 <p>Korean Hot Food</p>
                 <p>Fruit and Salad</p>
               </div>
-              <div className="bg-[url('/assets/lunchpicture.jpg')] w-[187px] h-[250px] bg-contain bg-no-repeat shadow-2xl rounded"></div>
+              <div className="bg-[url('/assets/lunchpicture.jpg')] w-[168px] h-[250px] bg-contain bg-center bg-no-repeat shadow-2xl rounded"></div>
             </div>
             <Separator orientation='horizontal' className='bg-black' />
 
             <div className='text-nowrap leading-loose flex gap-5'>
-              <div className="bg-[url('/assets/dinnerpicture.jpg')] w-[187px] h-[250px] bg-contain bg-no-repeat bg-center bg-black shadow-2xl rounded"></div>
+              <div className="bg-[url('/assets/dinnerpicture.jpg')] w-[177px] h-[250px] bg-contain bg-no-repeat bg-center bg-black shadow-2xl rounded"></div>
               <div className='text-left'>
                 <h1 className='text-[#caad66] text-center font-bold text-3xl md:text-3xl'>
                   Dinner
@@ -80,7 +80,7 @@ function FindOutMore() {
         ) : (
           <div className='text-black flex gap-10'>
             <div className='text-nowrap leading-loose flex gap-5'>
-              <div className="bg-[url('/assets/lunchpicture.jpg')] w-[187px] h-[250px] bg-contain bg-no-repeat shadow-2xl rounded"></div>
+              <div className="bg-[url('/assets/lunchpicture.jpg')] w-[168px] h-[250px] bg-contain bg-center bg-no-repeat shadow-2xl rounded"></div>
               <div className='text-left'>
                 <h1 className='text-[#caad66] text-center font-bold text-3xl md:text-3xl'>
                   Lunch
@@ -121,7 +121,7 @@ function FindOutMore() {
                 <p>Korean Hot Food</p>
                 <p>Fruit and Salad</p>
               </div>
-              <div className="bg-[url('/assets/dinnerpicture.jpg')] w-[187px] h-[250px] bg-contain bg-no-repeat bg-center bg-black shadow-2xl rounded"></div>
+              <div className="bg-[url('/assets/dinnerpicture.jpg')] w-[177px] h-[250px] bg-contain bg-no-repeat bg-center bg-black shadow-2xl rounded"></div>
             </div>
           </div>
         )}
