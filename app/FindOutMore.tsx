@@ -37,8 +37,8 @@ function FindOutMore() {
                 <h1 className='text-[#caad66] text-center font-bold text-3xl md:text-3xl'>
                   Lunch
                 </h1>
-                <h2>
-                  Time: <span className='font-bold'>12:00-14:30</span>
+                <h2 className='flex items-center justify-center'>
+                  <span className='font-bold'>12:00-14:30</span>
                 </h2>
                 <p>
                   Adult: <span className='font-bold'>$19.90</span>
@@ -46,7 +46,7 @@ function FindOutMore() {
                 <p>
                   Kid(4-10): <span className='font-bold'>$11.9</span>
                 </p>
-                <p>Including: </p>
+                <p>Serving: </p>
                 <p>Korean Hot Food</p>
                 <p>Fruit and Salad</p>
               </div>
@@ -60,8 +60,8 @@ function FindOutMore() {
                 <h1 className='text-[#caad66] text-center font-bold text-3xl md:text-3xl'>
                   Dinner
                 </h1>
-                <h2>
-                  Time: <span className='font-bold'>17:00-22:30</span>
+                <h2 className='flex items-center justify-center'>
+                  <span className='font-bold'>17:00-22:30</span>
                 </h2>
                 <p>
                   Adult: <span className='font-bold'>$49.90</span>
@@ -69,7 +69,7 @@ function FindOutMore() {
                 <p>
                   Kid(4-10): <span className='font-bold'>$29.9</span>
                 </p>
-                <p>Including: </p>
+                <p>Serving: </p>
                 <p>Korean BBQ</p>
                 <p>Sushi</p>
                 <p>Korean Hot Food</p>
@@ -94,7 +94,7 @@ function FindOutMore() {
                 <p>
                   Kid(4-10): <span className='font-bold'>$11.9</span>
                 </p>
-                <p>Including: </p>
+                <p>Serving: </p>
                 <p>Korean Hot Food</p>
                 <p>Fruit and Salad</p>
               </div>
@@ -115,7 +115,7 @@ function FindOutMore() {
                 <p>
                   Kid(4-10): <span className='font-bold'>$29.9</span>
                 </p>
-                <p>Including: </p>
+                <p>Serving: </p>
                 <p>Korean BBQ</p>
                 <p>Sushi</p>
                 <p>Korean Hot Food</p>
