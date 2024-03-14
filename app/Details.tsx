@@ -21,11 +21,14 @@ function Details() {
       </div>
       <div className='flex justify-center'>
         <div className='w-[230px]'>
-          <div className='text-[20px]'>Opening Hours</div>
+          <div className='text-[20px]'>Opening 7 Days</div>
           <div className='flex justify-between'>
-            <div>Monday</div> <div>17:30-22:30</div>
+            <div>Lunch</div> <div>12:00-14:30</div>
           </div>
           <div className='flex justify-between'>
+            <div>Dinner</div> <div>17:00-22:30</div>
+          </div>
+          {/* <div className='flex justify-between'>
             <div>Tuesday</div> <div>17:30-22:30</div>
           </div>
           <div className='flex justify-between'>
@@ -42,7 +45,7 @@ function Details() {
           </div>
           <div className='flex justify-between'>
             <div>Sunday</div> <div>17:30-22:30</div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
