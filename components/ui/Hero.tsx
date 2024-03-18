@@ -108,7 +108,7 @@ export default function Hero() {
             </span>
           </div>
         </div>
-        <Link href='#detail' className='flex justify-center items-center'>
+        <Link href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX' className='flex justify-center items-center'>
           <button className='mt-4 bg-[#caad66] hover:bg-[#dbc87c] rounded p-5 w-[200px] text-2xl'>
             Booking
           </button>

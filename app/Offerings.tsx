@@ -12,7 +12,7 @@ function Offerings() {
           <div className='ipadV:w-full mobile:w-4/5'>
             <div className='inline-block'>
               <Image
-                src='/assets/poster.jpg'
+                src='/assets/poster2.jpg'
                 alt='KoreanBBQ'
                 width={400}
                 height={400}
