@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 8.1 91.8% 52.4%;
+    --foreground: 13.3 9.7% 18.2%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -68,11 +72,18 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply font-nanum-brush border-border;
   }
   body {
     @apply bg-background text-foreground;
-    color: aliceblue;
-    background-color: #161616;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-permanent-marker; 
+  }
+
 }
