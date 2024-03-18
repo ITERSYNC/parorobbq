@@ -10,12 +10,13 @@ function Offerings() {
       <div className=' text-white flex flex-col justify-center items-center  gap-12 md:flex-row'>
         <div className='md:w-1/2 flex justify-center '>
           <div className='ipadV:w-full mobile:w-4/5'>
-            <div className='inline-block'>
+            <div className='inline-block shadow-2xl'>
               <Image
                 src='/assets/poster2.jpg'
                 alt='KoreanBBQ'
                 width={400}
                 height={400}
+                className='rounded-3xl'
               />
             </div>
           </div>
