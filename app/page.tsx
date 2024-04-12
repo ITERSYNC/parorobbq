@@ -9,6 +9,12 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import {
+  LifebuoyIcon,
+  NewspaperIcon,
+  PhoneIcon,
+  CakeIcon
+} from '@heroicons/react/20/solid'
 
 const navigation2 = {
   categories: [
@@ -142,66 +148,87 @@ const navigation2 = {
 const favorites = [
   {
     id: 1,
-    name: 'Black Basic Tee',
-    price: '$32',
+    name: 'Premium Beef',
+    price: '프리미엄 쇠고기',
     href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
-    imageAlt: "Model wearing women's black cotton crewneck tee."
+    imageSrc: '/assets/gallery1.png',
+    imageAlt: ''
   },
+
   {
     id: 2,
-    name: 'Off-White Basic Tee',
-    price: '$32',
+    name: 'Premium Beef',
+    price: '프리미엄 쇠고기',
     href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
-    imageAlt: "Model wearing women's off-white cotton crewneck tee."
-  },
-  {
-    id: 3,
-    name: 'Mountains Artwork Tee',
-    price: '$36',
-    href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
+    imageSrc: '/assets/gallery5.png',
     imageAlt:
       "Model wearing women's burgundy red crewneck artwork tee with small white triangle overlapping larger black triangle."
+  },
+
+  {
+    id: 3,
+    name: 'Premium Beef',
+    price: '프리미엄 쇠고기',
+    href: '#',
+    imageSrc: '/assets/gallery4.png',
+    imageAlt: "Model wearing women's off-white cotton crewneck tee."
   }
 ]
 const footerNavigation = {
-  shop: [
-    { name: 'Bags', href: '#' },
-    { name: 'Tees', href: '#' },
-    { name: 'Objects', href: '#' },
-    { name: 'Home Goods', href: '#' },
-    { name: 'Accessories', href: '#' }
+  menu: [
+    { name: 'All you can eat', href: '#' },
+    { name: 'Drinks', href: '#' }
   ],
   company: [
     { name: 'Who we are', href: '#' },
-    { name: 'Sustainability', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Terms & Conditions', href: '#' },
-    { name: 'Privacy', href: '#' }
-  ],
-  account: [
-    { name: 'Manage Account', href: '#' },
-    { name: 'Returns & Exchanges', href: '#' },
-    { name: 'Redeem a Gift Card', href: '#' }
+    { name: 'Careers', href: '#' }
   ],
   connect: [
     { name: 'Contact Us', href: '#' },
     { name: 'Facebook', href: '#' },
-    { name: 'Instagram', href: '#' },
-    { name: 'Pinterest', href: '#' }
+    { name: 'Instagram', href: '#' }
   ]
 }
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' }
+  { name: 'Home', href: '#' },
+  { name: 'Menu', href: '#' },
+  { name: 'Location', href: '#' },
+  { name: 'Contact us', href: '#' },
+  { name: 'About us', href: '#' }
+]
+
+const cards = [
+  {
+    name: 'FOOD WASTAGE',
+    description: 'Food wastage will be charged $15 per person.',
+    icon: CakeIcon
+  },
+  {
+    name: 'SURCHARGE',
+    description:
+      "Weekends will have a 1o% surcharge, while public holiday's will have a 15% surcharge.",
+    icon: LifebuoyIcon
+  },
+  {
+    name: 'TIME',
+    description: 'Seating time is restricted to 90 mins.',
+    icon: NewspaperIcon
+  },
+  {
+    name: 'MINIMUM',
+    description: 'Minimum 2 adults per table required.',
+    icon: NewspaperIcon
+  },
+  {
+    name: 'DRINKS',
+    description: 'Drinks are not included.',
+    icon: NewspaperIcon
+  },
+  {
+    name: 'OUTSIDE FOOD',
+    description: 'no outside food or drinks.',
+    icon: NewspaperIcon
+  }
 ]
 
 function classNames(...classes: string[]) {
@@ -399,12 +426,26 @@ export default function Example() {
             <a href='#' className='-m-1.5 p-1.5'>
               <span className='sr-only'>Your Company</span>
               <img
-                className='h-8 w-auto'
-                src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                className='h-8 w-auto rounded-full bg-[#F2F2F2]'
+                src='/assets/logo.svg'
                 alt=''
               />
+
+              {/* logo 放在这里*/}
             </a>
           </div>
+
+          <div className='lg:hidden'>
+            <a
+              href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
+              className='text-sm font-semibold leading-6 text-gray-900'
+            >
+              <p className='animate-bounce text-3xl lg:text-5xl'>
+                Booking tables! <span aria-hidden='true'>&rarr;</span>
+              </p>
+            </a>
+          </div>
+
           <div className='flex lg:hidden'>
             <button
               type='button'
@@ -415,23 +456,27 @@ export default function Example() {
               <Bars3Icon className='h-6 w-6' aria-hidden='true' />
             </button>
           </div>
+
           <div className='hidden lg:flex lg:gap-x-12'>
             {navigation.map(item => (
               <a
                 key={item.name}
                 href={item.href}
-                className='text-2xl font-semibold leading-6 text-gray-900'
+                className='text-5xl font-semibold leading-6 text-gray-900'
               >
                 {item.name}
               </a>
             ))}
           </div>
+
           <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
             <a
-              href='#'
+              href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
               className='text-sm font-semibold leading-6 text-gray-900'
             >
-              Log in <span aria-hidden='true'>&rarr;</span>
+              <p className='animate-bounce text-3xl lg:text-5xl'>
+                Booking tables! <span aria-hidden='true'>&rarr;</span>
+              </p>
             </a>
           </div>
         </nav>
@@ -500,8 +545,9 @@ export default function Example() {
             </div>
           </div> */}
           <div className='text-center'>
-            <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl font-permanent-marker'>
-              PARORO KOREAN BBQ <span className='font-nanum-brush'>한국식 바비큐</span>
+            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-9xl'>
+              PARORO KOREAN BBQ . <br />
+              <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
             {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
@@ -528,18 +574,19 @@ export default function Example() {
 
       <main>
         {/* Category section */}
+        {/* Grill chill part */}
         <section aria-labelledby='category-heading' className='bg-background'>
           <div className='mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8'>
             <div className='sm:flex sm:items-baseline sm:justify-between'>
               <h2
                 id='category-heading'
-                className='text-2xl font-bold tracking-tight text-gray-900'
+                className='mb-20 text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl'
               >
-                Shop by Category
+                Grill, Chill, and Fill
               </h2>
               <a
                 href='#'
-                className='hidden text-sm font-semibold text-foreground hover:text-indigo-500 sm:block'
+                className='hidden text-3xl font-semibold text-foreground hover:text-stone-50 sm:block'
               >
                 All menu
                 <span aria-hidden='true'> &rarr;</span>
@@ -547,10 +594,10 @@ export default function Example() {
             </div>
 
             <div className='mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8'>
-              <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2'>
+              <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-full sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2'>
                 <Image
                   src='/assets/category1.png'
-                  alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
+                  alt=''
                   className='object-cover object-center group-hover:opacity-75'
                   height={1000}
                   width={1000}
@@ -559,23 +606,26 @@ export default function Example() {
                   aria-hidden='true'
                   className='bg-gradient-to-b from-transparent to-black opacity-50'
                 />
-                <div className='flex items-end p-6'>
+                <div className='flex items-center p-6 text-2xl text-stone-50'>
                   <div>
-                    <h3 className='font-semibold text-white'>
+                    <h3 className='text-5xl font-semibold text-stone-50 sm:text-9xl'>
                       <a href='#'>
-                        <span className='absolute inset-0' />
-                        New Arrivals
+                        <span className='absolute inset-0 ' />
+                        Taste Seoul
                       </a>
                     </h3>
-                    <p aria-hidden='true' className='mt-1 text-sm text-white'>
-                      Shop now
+                    <p
+                      aria-hidden='true'
+                      className='mt-1 text-center font-nanum-brush text-xl text-stone-100 sm:text-7xl'
+                    >
+                      서울 맛보기
                     </p>
                   </div>
                 </div>
               </div>
-              <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full'>
+              <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-full sm:aspect-none sm:relative sm:h-full'>
                 <img
-                  src='https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg'
+                  src='/assets/gallery2.png'
                   alt='Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters.'
                   className='object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full'
                 />
@@ -583,23 +633,26 @@ export default function Example() {
                   aria-hidden='true'
                   className='bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0'
                 />
-                <div className='flex items-end p-6 sm:absolute sm:inset-0'>
+                <div className='mr-10 flex items-end justify-end p-6 text-2xl text-stone-50 sm:absolute sm:inset-0'>
                   <div>
-                    <h3 className='font-semibold text-white'>
+                    <h3 className='text-5xl font-semibold text-stone-50 sm:text-9xl'>
                       <a href='#'>
                         <span className='absolute inset-0' />
-                        Accessories
+                        Prime Cuts
                       </a>
                     </h3>
-                    <p aria-hidden='true' className='mt-1 text-sm text-white'>
-                      Shop now
+                    <p
+                      aria-hidden='true'
+                      className='mt-1 text-center font-nanum-brush text-xl text-stone-100 sm:text-7xl'
+                    >
+                      S최고급 부위
                     </p>
                   </div>
                 </div>
               </div>
-              <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full'>
+              <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-full sm:aspect-none sm:relative sm:h-full'>
                 <img
-                  src='https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg'
+                  src='/assets/gallery3.png'
                   alt='Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk.'
                   className='object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full'
                 />
@@ -607,16 +660,19 @@ export default function Example() {
                   aria-hidden='true'
                   className='bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0'
                 />
-                <div className='flex items-end p-6 sm:absolute sm:inset-0'>
+                <div className='mr-10 flex items-end justify-end p-6 text-2xl text-stone-50 sm:absolute sm:inset-0'>
                   <div>
-                    <h3 className='font-semibold text-white'>
+                    <h3 className='text-nowrap text-5xl font-semibold text-stone-50 sm:text-9xl'>
                       <a href='#'>
                         <span className='absolute inset-0' />
-                        Workspace
+                        Fresh Juicy
                       </a>
                     </h3>
-                    <p aria-hidden='true' className='mt-1 text-sm text-white'>
-                      Shop now
+                    <p
+                      aria-hidden='true'
+                      className='mt-1 text-center font-nanum-brush text-xl text-stone-100 sm:text-7xl'
+                    >
+                      신선한 맛
                     </p>
                   </div>
                 </div>
@@ -640,7 +696,7 @@ export default function Example() {
           <div className='relative bg-gray-800 px-6 py-32 sm:px-12 sm:py-40 lg:px-16'>
             <div className='absolute inset-0 overflow-hidden'>
               <img
-                src='https://tailwindui.com/img/ecommerce-images/home-page-03-feature-section-full-width.jpg'
+                src='/assets/location-section.png'
                 alt=''
                 className='h-full w-full object-cover object-center'
               />
@@ -649,24 +705,21 @@ export default function Example() {
               aria-hidden='true'
               className='absolute inset-0 bg-gray-900 bg-opacity-50'
             />
-            <div className='relative mx-auto flex max-w-3xl flex-col items-center text-center'>
+            <div className='relative mx-auto flex max-w-7xl flex-col items-center text-center'>
               <h2
                 id='cause-heading'
-                className='text-3xl font-bold tracking-tight text-white sm:text-4xl'
+                className='text-3xl font-bold tracking-tight text-white opacity-80 sm:text-8xl'
               >
-                Long-term thinking
+                Sizzle Your Senses - A Journey Through Korean BBQ!
               </h2>
-              <p className='mt-3 text-xl text-white'>
-                We&apso;re committed to responsible, sustainable, and ethical
-                manufacturing. Our small-scale approach allows us to focus on
-                quality and reduce our impact. We&apso;re doing our best to
-                delay the inevitable heat-death of the universe.
+              <p className='mt-3 font-nanum-brush text-xl text-stone-100 opacity-80  sm:text-7xl'>
+                감각을 자극하는 구이 - 한국 바비큐 여행!
               </p>
               <a
-                href='#'
-                className='mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto'
+                href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
+                className='mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-4xl font-medium text-gray-900 hover:bg-gray-100 sm:w-auto'
               >
-                Read our story
+                Booking!
               </a>
             </div>
           </div>
@@ -678,36 +731,42 @@ export default function Example() {
             <div className='sm:flex sm:items-baseline sm:justify-between'>
               <h2
                 id='favorites-heading'
-                className='text-2xl font-bold tracking-tight text-gray-900'
+                className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'
               >
-                Our Favorites
+                Culinary Adventures, Endless Excitement
+                <span className='font-nanum-brush text-2xl sm:text-4xl'>
+                  - 미각 탐험, 끊임없는 재미
+                </span>
               </h2>
               <a
                 href='#'
-                className='hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block'
+                className='hidden text-4xl font-semibold text-gray-900 sm:block '
               >
-                Browse all favorites
+                Browse all menu
                 <span aria-hidden='true'> &rarr;</span>
               </a>
             </div>
 
             <div className='mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-0 lg:gap-x-8'>
               {favorites.map(favorite => (
-                <div key={favorite.id} className='group relative'>
-                  <div className='h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto'>
+                <div
+                  key={favorite.id}
+                  className='group relative text-center text-5xl'
+                >
+                  <div className='h-96 w-full overflow-hidden rounded-full sm:aspect-h-1 sm:aspect-w-1 group-hover:opacity-75 sm:h-auto'>
                     <img
                       src={favorite.imageSrc}
                       alt={favorite.imageAlt}
                       className='h-full w-full object-cover object-center'
                     />
                   </div>
-                  <h3 className='mt-4 text-base font-semibold text-gray-900'>
-                    <a href={favorite.href}>
-                      <span className='absolute inset-0' />
+                  <h3 className='mt-4  font-semibold text-gray-900'>
+                    <a href={favorite.href} className='text-gray-900'>
+                      <span className='absolute inset-0 font-nanum-brush' />
                       {favorite.name}
                     </a>
                   </h3>
-                  <p className='mt-1 text-sm text-gray-500'>{favorite.price}</p>
+                  <p className='mt-1 text-gray-900'>{favorite.price}</p>
                 </div>
               ))}
             </div>
@@ -715,7 +774,7 @@ export default function Example() {
             <div className='mt-6 sm:hidden'>
               <a
                 href='#'
-                className='block text-sm font-semibold text-indigo-600 hover:text-indigo-500'
+                className='block text-sm font-semibold text-gray-900 hover:text-stone-100'
               >
                 Browse all favorites
                 <span aria-hidden='true'> &rarr;</span>
@@ -733,15 +792,15 @@ export default function Example() {
                   <div>
                     <h2
                       id='sale-heading'
-                      className='text-4xl font-bold tracking-tight text-white md:text-5xl'
+                      className='text-4xl font-bold tracking-tight text-white md:text-6xl'
                     >
-                      Final Stock.
+                      Lunch
                       <br />
-                      Up to 50% off.
+                      Up to 20% off.
                     </h2>
                     <div className='mt-6 text-base'>
-                      <a href='#' className='font-semibold text-white'>
-                        Shop the sale
+                      <a href='#' className='text-4xl font-semibold text-white'>
+                        Check the menu
                         <span aria-hidden='true'> &rarr;</span>
                       </a>
                     </div>
@@ -752,16 +811,16 @@ export default function Example() {
                       <div className='flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8'>
                         <div className='flex-shrink-0'>
                           <img
-                            className='h-64 w-64 rounded-lg object-cover md:h-72 md:w-72'
-                            src='https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg'
+                            className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
+                            src='/assets/gallery6.png'
                             alt=''
                           />
                         </div>
 
                         <div className='mt-6 flex-shrink-0 sm:mt-0'>
                           <img
-                            className='h-64 w-64 rounded-lg object-cover md:h-72 md:w-72'
-                            src='https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg'
+                            className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
+                            src='/assets/gallery9.png'
                             alt=''
                           />
                         </div>
@@ -769,16 +828,16 @@ export default function Example() {
                       <div className='flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8'>
                         <div className='flex-shrink-0'>
                           <img
-                            className='h-64 w-64 rounded-lg object-cover md:h-72 md:w-72'
-                            src='https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg'
+                            className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
+                            src='/assets/gallery7.png'
                             alt=''
                           />
                         </div>
 
                         <div className='mt-6 flex-shrink-0 sm:mt-0'>
                           <img
-                            className='h-64 w-64 rounded-lg object-cover md:h-72 md:w-72'
-                            src='https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg'
+                            className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
+                            src='/assets/gallery8.png'
                             alt=''
                           />
                         </div>
@@ -786,16 +845,16 @@ export default function Example() {
                       <div className='flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8'>
                         <div className='flex-shrink-0'>
                           <img
-                            className='h-64 w-64 rounded-lg object-cover md:h-72 md:w-72'
-                            src='https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg'
+                            className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
+                            src='/assets/category2.png'
                             alt=''
                           />
                         </div>
 
                         <div className='mt-6 flex-shrink-0 sm:mt-0'>
                           <img
-                            className='h-64 w-64 rounded-lg object-cover md:h-72 md:w-72'
-                            src='https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg'
+                            className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
+                            src='/assets/gallery10.png'
                             alt=''
                           />
                         </div>
@@ -807,9 +866,45 @@ export default function Example() {
             </div>
           </div>
         </section>
+
+        {/* Notice section */}
+
+        <div className='relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32'>
+          <img
+            src='/assets/gallery6.png'
+            alt=''
+            className='absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center'
+          />
+
+          <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+            <div className='mx-auto max-w-2xl lg:mx-0'>
+              <h2 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+                Notice
+              </h2>
+            </div>
+            <div className='mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8'>
+              {cards.map(card => (
+                <div
+                  key={card.name}
+                  className='flex gap-x-4 rounded-full bg-black/75 px-12 py-6 ring-1 ring-inset ring-white/10'
+                >
+                  {/* <card.icon
+                    className='h-7 w-5 flex-none text-gray-400'
+                    aria-hidden='true'
+                  /> */}
+                  <div className='text-base leading-7'>
+                    <h3 className='font-semibold text-white'>{card.name}</h3>
+                    <p className='mt-2 text-gray-300'>{card.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </main>
 
-      <footer aria-labelledby='footer-heading' className='bg-white'>
+      {/* Footer section */}
+      <footer aria-labelledby='footer-heading' className='text-gray-900'>
         <h2 id='footer-heading' className='sr-only'>
           Footer
         </h2>
@@ -820,11 +915,11 @@ export default function Example() {
                 <div>
                   <h3 className='text-sm font-medium text-gray-900'>Shop</h3>
                   <ul role='list' className='mt-6 space-y-6'>
-                    {footerNavigation.shop.map(item => (
+                    {footerNavigation.menu.map(item => (
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
-                          className='text-gray-500 hover:text-gray-600'
+                          className='text-gray-900 hover:text-gray-600'
                         >
                           {item.name}
                         </a>
@@ -839,7 +934,7 @@ export default function Example() {
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
-                          className='text-gray-500 hover:text-gray-600'
+                          className='text-gray-900 hover:text-gray-600'
                         >
                           {item.name}
                         </a>
@@ -849,21 +944,21 @@ export default function Example() {
                 </div>
               </div>
               <div className='space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0'>
-                <div>
+                {/* <div>
                   <h3 className='text-sm font-medium text-gray-900'>Account</h3>
                   <ul role='list' className='mt-6 space-y-6'>
                     {footerNavigation.account.map(item => (
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
-                          className='text-gray-500 hover:text-gray-600'
+                          className='text-gray-900 hover:text-gray-600'
                         >
                           {item.name}
                         </a>
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
                 <div>
                   <h3 className='text-sm font-medium text-gray-900'>Connect</h3>
                   <ul role='list' className='mt-6 space-y-6'>
@@ -871,7 +966,7 @@ export default function Example() {
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
-                          className='text-gray-500 hover:text-gray-600'
+                          className='text-gray-900 hover:text-gray-600'
                         >
                           {item.name}
                         </a>
@@ -885,7 +980,7 @@ export default function Example() {
               <h3 className='text-sm font-medium text-gray-900'>
                 Sign up for our newsletter
               </h3>
-              <p className='mt-6 text-sm text-gray-500'>
+              <p className='mt-6 text-sm text-gray-900'>
                 The latest deals and savings, sent to your inbox weekly.
               </p>
               <form className='mt-2 flex sm:max-w-md'>
@@ -902,7 +997,7 @@ export default function Example() {
                 <div className='ml-4 flex-shrink-0'>
                   <button
                     type='submit'
-                    className='flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                    className='flex w-full items-center justify-center rounded-md border border-transparent bg-gray-900 px-4 py-2 text-base font-medium text-white shadow-sm  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                   >
                     Sign up
                   </button>
@@ -911,9 +1006,9 @@ export default function Example() {
             </div>
           </div>
 
-          <div className='border-t border-gray-200 py-10'>
-            <p className='text-sm text-gray-500'>
-              Copyright &copy; 2021 Your Company, Inc.
+          <div className='border-t border-gray-900 py-10'>
+            <p className='text-sm text-gray-900'>
+              Copyright &copy; 2024 Paroro Korean BBQ, Inc.
             </p>
           </div>
         </div>
