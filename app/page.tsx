@@ -175,25 +175,38 @@ const favorites = [
   }
 ]
 const footerNavigation = {
-  menu: [
-    { name: 'All you can eat', href: '#' },
-    { name: 'Drinks', href: '#' }
+  shop: [
+    {
+      name: 'level 1, 315 Elizabeth St',
+      href: 'https://www.google.com/maps/place/Paroro+BBQ/@-37.8112843,144.9589269,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad64305b8fd955f:0x9dad3e6ecb5421f7!8m2!3d-37.8112843!4d144.9615018!16s%2Fg%2F11l2cjm717?entry=ttu'
+    },
+    {
+      name: 'Melbourne, VIC, 3000',
+      href: 'https://www.google.com/maps/place/Paroro+BBQ/@-37.8112843,144.9589269,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad64305b8fd955f:0x9dad3e6ecb5421f7!8m2!3d-37.8112843!4d144.9615018!16s%2Fg%2F11l2cjm717?entry=ttu'
+    }
   ],
-  company: [
-    { name: 'Who we are', href: '#' },
-    { name: 'Careers', href: '#' }
+  opening: [
+    {
+      name: 'Lunch 12:00-14:30',
+      href: 'https://www.google.com/maps/place/Paroro+BBQ/@-37.8112843,144.9589269,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad64305b8fd955f:0x9dad3e6ecb5421f7!8m2!3d-37.8112843!4d144.9615018!16s%2Fg%2F11l2cjm717?entry=ttu'
+    },
+    {
+      name: 'Dinner 17:00-22:30',
+      href: 'https://www.google.com/maps/place/Paroro+BBQ/@-37.8112843,144.9589269,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad64305b8fd955f:0x9dad3e6ecb5421f7!8m2!3d-37.8112843!4d144.9615018!16s%2Fg%2F11l2cjm717?entry=ttu'
+    }
   ],
   connect: [
     { name: 'Contact Us', href: '#' },
     { name: 'Facebook', href: '#' },
     { name: 'Instagram', href: '#' }
-  ]
+  ],
+  contact: [{ name: '0484 636 478', href: '#' }]
 }
 const navigation = [
   { name: 'Home', href: '#' },
   { name: 'Menu', href: '#' },
-  { name: 'Location', href: '#' },
-  { name: 'Contact us', href: '#' },
+  { name: 'Location', href: '#footer-heading' },
+  { name: 'Contact us', href: '#footer-heading' },
   { name: 'About us', href: '#' }
 ]
 
@@ -915,7 +928,7 @@ export default function Example() {
                 <div>
                   <h3 className='text-sm font-medium text-gray-900'>Shop</h3>
                   <ul role='list' className='mt-6 space-y-6'>
-                    {footerNavigation.menu.map(item => (
+                    {footerNavigation.shop.map(item => (
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
@@ -928,9 +941,11 @@ export default function Example() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className='text-sm font-medium text-gray-900'>Company</h3>
+                  <h3 className='text-sm font-medium text-gray-900'>
+                    Opening 7 Days
+                  </h3>
                   <ul role='list' className='mt-6 space-y-6'>
-                    {footerNavigation.company.map(item => (
+                    {footerNavigation.opening.map(item => (
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
@@ -944,10 +959,12 @@ export default function Example() {
                 </div>
               </div>
               <div className='space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0'>
-                {/* <div>
-                  <h3 className='text-sm font-medium text-gray-900'>Account</h3>
+                <div>
+                  <h3 className='text-sm font-medium text-gray-900'>
+                    Contact Us
+                  </h3>
                   <ul role='list' className='mt-6 space-y-6'>
-                    {footerNavigation.account.map(item => (
+                    {footerNavigation.contact.map(item => (
                       <li key={item.name} className='text-sm'>
                         <a
                           href={item.href}
@@ -958,7 +975,7 @@ export default function Example() {
                       </li>
                     ))}
                   </ul>
-                </div> */}
+                </div>
                 <div>
                   <h3 className='text-sm font-medium text-gray-900'>Connect</h3>
                   <ul role='list' className='mt-6 space-y-6'>
