@@ -459,7 +459,7 @@ export default function Example() {
             </a>
           </div>
 
-          <div className='flex lg:hidden'>
+          <div className='flex hidden'>
             <button
               type='button'
               className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
@@ -692,7 +692,7 @@ export default function Example() {
               </div>
             </div>
 
-            <div className='mt-6 sm:hidden'>
+            <div className='mt-6 hidden'>
               <a
                 href='#'
                 className='block text-sm font-semibold text-indigo-600 hover:text-indigo-500'
