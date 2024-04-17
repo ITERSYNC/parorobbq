@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import gsap, { random } from 'gsap'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 export default function Hero() {
   const component = useRef(null)
@@ -88,8 +89,8 @@ export default function Hero() {
 
   return (
     <div className="flex flex-col items-center justify-between relative px-0 mt-[100px] bg-[url('/assets/heroBackgroundSmall.jpg')] md:bg-[url('/assets/heroBackground.jpeg')] sm:bg-left-bottom bg-fixed bg-cover">
-      <div id='movingElement' className='mx-auto'>
-        <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center'>
+      <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center'>
+        <div id='movingElement' className='mx-auto'>
           <div className='col-start-1 md:row-start-1 px-10 lg:px-6 md:px-4'>
             <h1 className='mb-8 text-[clamp(2rem,10vmin,10rem)] font-extrabold leading-none tracking-tighter text-nowrap'>
               <span className='block bg-gradient-to-r from bg-yellow-200 via-yellow-50 to-yellow-200 bg-clip-text'>
@@ -107,6 +108,11 @@ export default function Hero() {
             </span>
           </div>
         </div>
+        <Link href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX' className='flex justify-center items-center'>
+          <button className='mt-4 bg-[#caad66] hover:bg-[#dbc87c] rounded p-5 w-[200px] text-2xl'>
+            Booking
+          </button>
+        </Link>
       </div>
     </div>
   )
