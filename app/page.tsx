@@ -809,7 +809,6 @@ export default function Example() {
                     >
                       Lunch
                       <br />
-                      Up to 20% off.
                     </h2>
                     <div className='mt-6 text-base'>
                       <a href='#' className='text-4xl font-semibold text-white'>
@@ -955,6 +954,9 @@ export default function Example() {
                         </a>
                       </li>
                     ))}
+                    <li className=''>
+                      ANZAC Day NO Lunch, Dinner as usual
+                    </li>
                   </ul>
                 </div>
               </div>
