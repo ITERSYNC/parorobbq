@@ -413,10 +413,12 @@ export default function Example() {
 
                 <div className='border-t border-gray-200 px-4 py-6'>
                   <a href='#' className='-m-2 flex items-center p-2'>
-                    <img
+                    <Image
                       src='https://tailwindui.com/img/flags/flag-canada.svg'
                       alt=''
                       className='block h-auto w-5 flex-shrink-0'
+                      width={400}
+                      height={0}
                     />
                     <span className='ml-3 block text-base font-medium text-gray-900'>
                       CAD
@@ -438,10 +440,12 @@ export default function Example() {
           <div className='flex lg:flex-1'>
             <a href='#' className='-m-1.5 p-1.5'>
               <span className='sr-only'>Your Company</span>
-              <img
+              <Image
                 className='h-8 w-auto rounded-full bg-[#F2F2F2]'
                 src='/assets/logo.svg'
                 alt=''
+                width={400}
+                height={0}
               />
 
               {/* logo 放在这里*/}
@@ -504,10 +508,12 @@ export default function Example() {
             <div className='flex items-center justify-between'>
               <a href='#' className='-m-1.5 p-1.5'>
                 <span className='sr-only'>Your Company</span>
-                <img
+                <Image
                   className='h-8 w-auto'
                   src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
                   alt=''
+                  width={400}
+                  height={0}
                 />
               </a>
               <button
@@ -637,10 +643,12 @@ export default function Example() {
                 </div>
               </div>
               <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-full sm:aspect-none sm:relative sm:h-full'>
-                <img
+                <Image
                   src='/assets/gallery2.png'
                   alt='Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters.'
                   className='object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full'
+                  width={400}
+                  height={0}
                 />
                 <div
                   aria-hidden='true'
@@ -664,10 +672,12 @@ export default function Example() {
                 </div>
               </div>
               <div className='group aspect-h-1 aspect-w-2 overflow-hidden rounded-full sm:aspect-none sm:relative sm:h-full'>
-                <img
+                <Image
                   src='/assets/gallery3.png'
                   alt='Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk.'
                   className='object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full'
+                  width={400}
+                  height={0}
                 />
                 <div
                   aria-hidden='true'
@@ -708,10 +718,12 @@ export default function Example() {
         <section aria-labelledby='cause-heading'>
           <div className='relative bg-gray-800 px-6 py-32 sm:px-12 sm:py-40 lg:px-16'>
             <div className='absolute inset-0 overflow-hidden'>
-              <img
+              <Image
                 src='/assets/location-section.png'
                 alt=''
                 className='h-full w-full object-cover object-center'
+                width={400}
+                height={0}
               />
             </div>
             <div
@@ -767,10 +779,12 @@ export default function Example() {
                   className='group relative text-center text-5xl'
                 >
                   <div className='h-96 w-full overflow-hidden rounded-full sm:aspect-h-1 sm:aspect-w-1 group-hover:opacity-75 sm:h-auto'>
-                    <img
+                    <Image
                       src={favorite.imageSrc}
                       alt={favorite.imageAlt}
                       className='h-full w-full object-cover object-center'
+                      width={400}
+                      height={0}
                     />
                   </div>
                   <h3 className='mt-4  font-semibold text-gray-900'>
@@ -823,52 +837,64 @@ export default function Example() {
                     <div className='ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8'>
                       <div className='flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8'>
                         <div className='flex-shrink-0'>
-                          <img
+                          <Image
                             className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
                             src='/assets/gallery6.png'
                             alt=''
+                            width={400}
+                            height={0}
                           />
                         </div>
 
                         <div className='mt-6 flex-shrink-0 sm:mt-0'>
-                          <img
+                          <Image
                             className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
                             src='/assets/gallery9.png'
                             alt=''
+                            width={400}
+                            height={0}
                           />
                         </div>
                       </div>
                       <div className='flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8'>
                         <div className='flex-shrink-0'>
-                          <img
+                          <Image
                             className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
                             src='/assets/gallery7.png'
                             alt=''
+                            width={400}
+                            height={0}
                           />
                         </div>
 
                         <div className='mt-6 flex-shrink-0 sm:mt-0'>
-                          <img
+                          <Image
                             className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
                             src='/assets/gallery8.png'
                             alt=''
+                            width={400}
+                            height={0}
                           />
                         </div>
                       </div>
                       <div className='flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8'>
                         <div className='flex-shrink-0'>
-                          <img
+                          <Image
                             className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
                             src='/assets/category2.png'
                             alt=''
+                            width={400}
+                            height={0}
                           />
                         </div>
 
                         <div className='mt-6 flex-shrink-0 sm:mt-0'>
-                          <img
+                          <Image
                             className='h-64 w-64 rounded-3xl object-cover md:h-72 md:w-72'
                             src='/assets/gallery10.png'
                             alt=''
+                            width={400}
+                            height={0}
                           />
                         </div>
                       </div>
