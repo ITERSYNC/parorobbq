@@ -15,6 +15,7 @@ import {
   PhoneIcon,
   CakeIcon
 } from '@heroicons/react/20/solid'
+import { Separator } from '@/components/ui/separator'
 
 // const navigation2 = {
 //   categories: [
@@ -568,6 +569,27 @@ export default function Example() {
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
+            <Separator orientation='horizontal' className='my-3 sm:h-1 bg-black' />
+
+            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+              DINNER 15% OFF
+              <br />
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                from 6th to 8th May.
+              </span>
+            </h1>
+            <Separator orientation='horizontal' className='my-3 sm:h-1 bg-black' />
+            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+              ALL DAY 10% OFF
+              <br />
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                on Mothers day (12th May)
+              </span>
+            </h1>
+            {/* <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-9xl'>
+              PARORO KOREAN BBQ . <br />
+              <span className='font-nanum-brush'>한국식 바비큐.</span>
+            </h1> */}
             {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
