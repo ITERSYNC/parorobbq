@@ -572,7 +572,7 @@ export default function Example() {
             <Separator orientation='horizontal' className='my-3 sm:h-1 bg-black' />
 
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-              DINNER 15% OFF
+              DINNER 10% OFF
               <br />
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
                 from 6th to 8th May.
