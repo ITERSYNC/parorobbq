@@ -569,7 +569,10 @@ export default function Example() {
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
-            <Separator orientation='horizontal' className='my-3 sm:h-1 bg-black' />
+            <Separator
+              orientation='horizontal'
+              className='my-3 h-[2px] bg-gray-900 sm:h-1'
+            />
 
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               DINNER 10% OFF
@@ -578,7 +581,10 @@ export default function Example() {
                 from 6th to 8th May.
               </span>
             </h1>
-            <Separator orientation='horizontal' className='my-3 sm:h-1 bg-black' />
+            <Separator
+              orientation='horizontal'
+              className='my-3 h-[2px] bg-gray-900 sm:h-1'
+            />
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               ALL DAY 10% OFF
               <br />
