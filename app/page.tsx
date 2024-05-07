@@ -852,9 +852,9 @@ export default function Example() {
                       id='sale-heading'
                       className='text-4xl font-bold tracking-tight text-white md:text-6xl'
                     >
-                      Lunch
+                      We are open
                       <br />
-                      Up to 20% off.
+                      lunch and dinner!
                     </h2>
                     <div className='mt-6 text-base'>
                       <a href='#' className='text-4xl font-semibold text-white'>
