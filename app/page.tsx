@@ -6,7 +6,8 @@ import {
   Bars3Icon,
   MagnifyingGlassIcon,
   ShoppingBagIcon,
-  XMarkIcon
+  XMarkIcon,
+  CheckIcon
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import {
@@ -146,6 +147,7 @@ import { Separator } from '@/components/ui/separator'
 //     { name: 'Stores', href: '#' }
 //   ]
 // }
+
 const favorites = [
   {
     id: 1,
@@ -252,6 +254,7 @@ function classNames(...classes: string[]) {
 export default function Example() {
   const [open, setOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(true)
 
   return (
     <div className=''>
@@ -575,10 +578,10 @@ export default function Example() {
             />
 
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-              DINNER 10% OFF
+              ALL DAY 10% OFF
               <br />
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                from 6th to 8th May.
+                Monday Tuesday Wednesday
               </span>
             </h1>
             <Separator
