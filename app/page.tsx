@@ -572,12 +572,9 @@ export default function Example() {
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
-            <Separator
-              orientation='horizontal'
-              className='my-3 h-[2px] bg-gray-900 sm:h-1'
-            />
+         
 
-            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl pt-6'>
               Pricing <br />
               Lunch AU$ 19.90 <br />
               Dinner AU$ 49.90 <br />
