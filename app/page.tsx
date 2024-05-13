@@ -593,7 +593,7 @@ export default function Example() {
                 Monday Tuesday Wednesday
               </span>
             </h1>
-            <Separator
+            {/* <Separator
               orientation='horizontal'
               className='my-3 h-[2px] bg-gray-900 sm:h-1'
             />
@@ -603,7 +603,7 @@ export default function Example() {
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
                 on Mothers day (12th May)
               </span>
-            </h1>
+            </h1> */}
             {/* <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-9xl'>
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
