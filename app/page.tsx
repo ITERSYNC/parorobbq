@@ -582,9 +582,7 @@ export default function Example() {
                 orientation='horizontal'
                 className='my-3 h-[2px] bg-gray-900 sm:h-1'
               />
-              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                Monday - Friday
-              </span>
+      
             </h1>
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               ALL DAY 10% OFF
