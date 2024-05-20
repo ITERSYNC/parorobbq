@@ -572,23 +572,33 @@ export default function Example() {
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
-         
+            <div className='grid  md:grid-cols-2'>
+              <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+                Lunch $19.90 <br />
+                <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                  *Kids (4-12) half price <br /> Whats included: Korean Hot Foods,
+                  Salads, Desserts
+                </span>
+              </h1>
 
-            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl pt-6'>
-              Pricing <br />
-              Lunch AU$ 19.90 <br />
-              Dinner AU$ 49.90 <br />
-              <Separator
-                orientation='horizontal'
-                className='my-3 h-[2px] bg-gray-900 sm:h-1'
-              />
-      
-            </h1>
+              <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+                Dinner $49.90 <br />
+                <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                  *Kids (4-12) half price <br />
+                  Whats included: Premium Meat BBQ, Korean Hot Foods, Salads,
+                  Desserts
+                </span>
+              </h1>
+            </div>
+            <Separator
+              orientation='horizontal'
+              className='my-3 h-[2px] bg-gray-900 sm:h-1'
+            />
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               ALL DAY 10% OFF
               <br />
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                Monday Tuesday Wednesday
+                Only On Monday Tuesday Wednesday *drinks excluded
               </span>
             </h1>
             {/* <Separator
