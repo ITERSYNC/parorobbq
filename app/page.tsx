@@ -576,8 +576,8 @@ export default function Example() {
               <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
                 Lunch $19.90 <br />
                 <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                  *Kids (4-12) half price <br /> Whats included: Korean Hot Foods,
-                  Salads, Desserts
+                  *Kids (4-12) half price <br /> Whats included: Korean Hot
+                  Foods, Salads, Desserts
                 </span>
               </h1>
 
@@ -599,6 +599,17 @@ export default function Example() {
               <br />
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
                 Only On Monday Tuesday Wednesday *drinks excluded
+              </span>
+            </h1>
+            <Separator
+              orientation='horizontal'
+              className='my-3 h-[2px] bg-gray-900 sm:h-1'
+            />
+            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+              Notice: <br />
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                Only offering dinner (No Lunch) on Kings birthday on Mon, 10 Jun
+                2024.
               </span>
             </h1>
             {/* <Separator
