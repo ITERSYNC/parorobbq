@@ -600,6 +600,10 @@ export default function Example() {
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
                 Only On Monday Tuesday Wednesday *drinks excluded
               </span>
+              <br />
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                *PUBLIC HOLIDAY EXCLUDED
+              </span>
             </h1>
             <Separator
               orientation='horizontal'
