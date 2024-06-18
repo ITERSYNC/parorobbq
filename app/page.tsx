@@ -576,15 +576,15 @@ export default function Example() {
               <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
                 Lunch $19.90 <br />
                 <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                  *Kids (4-12) half price <br /> Whats included: Korean Hot
-                  Foods, Salads, Desserts
+                  *Kids (4-10) half price <br /> Whats included: Korean Hot
+                  Foods, Salads, Desserts <br /> Note* NO BBQ or sushi for lunch
                 </span>
               </h1>
 
               <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
                 Dinner $49.90 <br />
                 <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                  *Kids (4-12) half price <br />
+                  *Kids (4-10) half price <br />
                   Whats included: Premium Meat BBQ, Korean Hot Foods, Salads,
                   Desserts
                 </span>
