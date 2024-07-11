@@ -605,7 +605,7 @@ export default function Example() {
                 *PUBLIC HOLIDAY EXCLUDED
               </span>
             </h1>
-            <Separator
+            {/* <Separator
               orientation='horizontal'
               className='my-3 h-[2px] bg-gray-900 sm:h-1'
             />
@@ -615,7 +615,7 @@ export default function Example() {
                 Only offering dinner (No Lunch) on Kings birthday on Mon, 10 Jun
                 2024.
               </span>
-            </h1>
+            </h1> */}
             {/* <Separator
               orientation='horizontal'
               className='my-3 h-[2px] bg-gray-900 sm:h-1'
