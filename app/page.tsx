@@ -461,8 +461,9 @@ export default function Example() {
               href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
               className='text-sm font-semibold leading-6 text-gray-900'
             >
-              <p className='animate-bounce text-3xl lg:text-5xl'>
-                Booking tables! <span aria-hidden='true'>&rarr;</span>
+              <p className='text-lg lg:text-5xl '>
+                Authentic Korean BBQ in Melbourne
+                {/* <span aria-hidden='true'>&rarr;</span> */}
               </p>
             </a>
           </div>
@@ -491,14 +492,14 @@ export default function Example() {
           </div>
 
           <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-            <a
+            {/* <a
               href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
               className='text-sm font-semibold leading-6 text-gray-900'
             >
               <p className='animate-bounce text-3xl lg:text-5xl'>
                 Booking tables! <span aria-hidden='true'>&rarr;</span>
               </p>
-            </a>
+            </a> */}
           </div>
         </nav>
         <Dialog
@@ -557,7 +558,7 @@ export default function Example() {
       </header>
 
       <div className='relative isolate px-6 pt-14 lg:px-8'>
-        <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
+        <div className='mx-auto max-w-2xl pb-28 pt-16 lg:py-56'>
           {/* <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
             <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
               Announcing our next round of funding.{' '}
@@ -567,14 +568,27 @@ export default function Example() {
               </a>
             </div>
           </div> */}
+          <div className='flex w-full justify-center'>
+            <div className='mb-10 flex w-fit animate-bounce rounded-lg border-4 border-gray-900 bg-slate-300 px-6 py-1 sm:mb-14'>
+              <a
+                href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
+                className='text-sm font-semibold leading-6 text-gray-900'
+              >
+                <p className='text-3xl lg:text-5xl'>
+                  Booking tables!
+                  {/* <span aria-hidden='true'>&rarr;</span> */}
+                </p>
+              </a>
+            </div>
+          </div>
+
           <div className='text-center'>
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-9xl'>
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
-         
 
-            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl pt-6'>
+            <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               Pricing <br />
               Lunch AU$ 19.90 <br />
               Dinner AU$ 49.90 <br />
@@ -582,7 +596,6 @@ export default function Example() {
                 orientation='horizontal'
                 className='my-3 h-[2px] bg-gray-900 sm:h-1'
               />
-      
             </h1>
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               ALL DAY 10% OFF
