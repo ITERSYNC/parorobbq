@@ -587,12 +587,19 @@ export default function Example() {
               PARORO KOREAN BBQ . <br />
               <span className='font-nanum-brush'>한국식 바비큐.</span>
             </h1>
+
             <div className='grid  md:grid-cols-2'>
               <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                Lunch $19.90 <br />
+                Lunch <br />
+                $19.90
+                <span className='text-xl sm:text-3xl'>(Weekdays)</span> $39.90
+                <span className='text-xl sm:text-3xl'>(Weekends)</span>
+                <br />
                 <span className='font-nanum-brush text-[25px] sm:text-3xl'>
                   *Kids (4-10) half price <br /> Whats included: Korean Hot
-                  Foods, Salads, Desserts <br /> Note* NO BBQ or sushi for lunch
+                  Foods, Salads, Desserts <br /> Note: <br />
+                  NO BBQ or sushi for lunch on weekdays <br />
+                  No sushi for lunch on weekends
                 </span>
               </h1>
 
