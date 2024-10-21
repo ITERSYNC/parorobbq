@@ -596,17 +596,15 @@ export default function Example() {
                 <span className='text-xl sm:text-3xl'>(Weekends)</span>
                 <br />
                 <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                  *Kids (4-10) half price <br /> Whats included: Korean Hot
-                  Foods, Salads, Desserts <br /> Note: <br />
-                  NO BBQ or sushi for lunch on weekdays <br />
-                  No sushi for lunch on weekends
+                  Whats included: Korean Hot Foods, Salads, Desserts <br /> *NO
+                  BBQ or sushi for lunch on weekdays <br />
+                  *No sushi for lunch on weekends
                 </span>
               </h1>
 
               <h1 className='pt-6 font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
                 Dinner $49.90 <br />
                 <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                  *Kids (4-10) half price <br />
                   Whats included: Premium Meat BBQ, Korean Hot Foods, Salads,
                   Desserts
                 </span>
@@ -616,15 +614,40 @@ export default function Example() {
               orientation='horizontal'
               className='my-3 h-[2px] bg-gray-900 sm:h-1'
             />
+            <h1 className='pt-6 font-permanent-marker text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+              Kids special price
+              <br />
+              <span className='text-[25px] font-bold sm:text-3xl'>
+                Lunch $11.90
+                <Separator
+                  orientation='vertical'
+                  className='my-3 w-[2px] bg-gray-900 sm:w-1'
+                />
+                Dinner $29.90
+              </span>
+            </h1>
+
+            <Separator
+              orientation='horizontal'
+              className='my-3 h-[2px] bg-gray-900 sm:h-1'
+            />
             <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-              ALL DAY 10% OFF
+              10% OFF for students
               <br />
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                Only On Monday Tuesday Wednesday *drinks excluded
+                *Student ID required
               </span>
               <br />
               <span className='font-nanum-brush text-[25px] sm:text-3xl'>
-                *PUBLIC HOLIDAY EXCLUDED
+                *Only On Monday Tuesday
+              </span>
+              <br />
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                *Drinks excluded
+              </span>
+              <br />
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                *Public holiday excluded
               </span>
             </h1>
             {/* <Separator
