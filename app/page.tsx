@@ -650,6 +650,15 @@ export default function Example() {
                 *Public holiday excluded
               </span>
             </h1>
+            <Separator
+              orientation='horizontal'
+              className='my-3 h-[2px] bg-gray-900 sm:h-1'
+            />
+            <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+              <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+                *Public holiday 10% surcharge
+              </span>
+            </h1>
             {/* <Separator
               orientation='horizontal'
               className='my-3 h-[2px] bg-gray-900 sm:h-1'
