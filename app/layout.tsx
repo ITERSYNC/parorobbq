@@ -2,16 +2,17 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Head from 'next/head'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Paroro Korean BBQ | Melbourne Best Korean BBQ Buffet',
-  description: 'Melbourne’s best Korean BBQ restaurant',
+  description: 'Melbourne’s best Korean BBQ restaurant'
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
@@ -53,6 +54,7 @@ export default function RootLayout({
         <link rel='icon' href='/assets/logo.svg' />
       </Head>
       <body className={inter.className}>{children}</body>
+      <GoogleAnalytics gaId='AW-16761090328' />
     </html>
   )
 }
