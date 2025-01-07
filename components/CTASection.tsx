@@ -31,7 +31,7 @@ export default function CTASection() {
             감각을 자극하는 구이 - 한국 바비큐 여행!
           </p>
           <Link
-            href='https://inline.app/booking/...'
+            href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
             className='mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-4xl font-medium text-gray-900 hover:bg-gray-100 sm:w-auto'
           >
             Booking!
