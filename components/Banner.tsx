@@ -54,7 +54,7 @@ export default function Banner() {
             <h1 className='pt-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
               Lunch <br />
               $19.90
-              <span className='text-xl sm:text-3xl'>(Weekdays)</span> $39.90
+              <span className='text-xl sm:text-3xl'>(Weekdays)</span> $43.90
               <span className='text-xl sm:text-3xl'>(Weekends)</span>
               <br />
               <span className='font-sans text-[25px] sm:text-3xl'>
@@ -65,7 +65,11 @@ export default function Banner() {
             </h1>
 
             <h1 className='pt-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
-              Dinner $49.90 <br />
+              Dinner <br />
+              $49.90
+              <span className='text-xl sm:text-3xl'>(Weekdays)</span> $54.90
+              <span className='text-xl sm:text-3xl'>(Weekends)</span>
+              <br />
               <span className='font-sans text-[25px] sm:text-3xl'>
                 Whats included: Premium Meat BBQ, Korean Hot Foods, Salads,
                 Desserts
@@ -80,12 +84,12 @@ export default function Banner() {
             Kids special price
             <br />
             <span className='font-sans text-[25px] font-bold sm:text-3xl'>
-              Lunch $11.90
+              Lunch: $11.90(weekday) $25.90(weekends)
               <Separator
                 orientation='vertical'
                 className='my-3 w-[2px] bg-white sm:w-1'
               />
-              Dinner $29.90
+              Dinner: $29.90(weekday) $32.90(weekends)
             </span>
           </h1>
 
@@ -101,7 +105,7 @@ export default function Banner() {
             </span>
             <br />
             <span className='font-sans text-[25px] sm:text-3xl'>
-              *Only On Monday Tuesday
+              *Only On Monday & Tuesday
             </span>
             <br />
             <span className='font-sans text-[25px] sm:text-3xl'>
