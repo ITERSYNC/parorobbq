@@ -23,18 +23,80 @@ export default function Banner() {
 
         {/* 店名标题 */}
         <div className='text-center'>
-          <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-9xl'>
-            PARORO KOREAN BBQ .
-            <br />
+          <h1 className='font-sans text-4xl font-bold tracking-tight text-black sm:text-9xl'>
+            PARORO KOREAN BBQ . <br />
             <span className='font-nanum-brush'>한국식 바비큐.</span>
           </h1>
-          <Separator className='my-3 h-[2px] bg-gray-900 sm:h-1' />
 
-          <h1 className='font-permanent-marker text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+          <div className='grid  md:grid-cols-2'>
+            <h1 className='pt-6 font-sans text-4xl font-bold tracking-tight text-black sm:text-6xl'>
+              Lunch <br />
+              $19.90
+              <span className='text-xl sm:text-3xl'>(Weekdays)</span> $39.90
+              <span className='text-xl sm:text-3xl'>(Weekends)</span>
+              <br />
+              <span className='font-sans text-[25px] sm:text-3xl'>
+                Whats included: Korean Hot Foods, Salads, Desserts <br /> *NO
+                BBQ or sushi for lunch on weekdays <br />
+                *No sushi for lunch on weekends
+              </span>
+            </h1>
+
+            <h1 className='pt-6 font-sans text-4xl font-bold tracking-tight text-black sm:text-6xl'>
+              Dinner $49.90 <br />
+              <span className='font-sans text-[25px] sm:text-3xl'>
+                Whats included: Premium Meat BBQ, Korean Hot Foods, Salads,
+                Desserts
+              </span>
+            </h1>
+          </div>
+          <Separator
+            orientation='horizontal'
+            className='my-3 h-[2px] bg-black sm:h-1'
+          />
+          <h1 className='pt-6 font-sans text-2xl font-bold tracking-tight text-black sm:text-4xl'>
+            Kids special price
+            <br />
+            <span className='font-sans text-[25px] font-bold sm:text-3xl'>
+              Lunch $11.90
+              <Separator
+                orientation='vertical'
+                className='my-3 w-[2px] bg-black sm:w-1'
+              />
+              Dinner $29.90
+            </span>
+          </h1>
+
+          <Separator
+            orientation='horizontal'
+            className='my-3 h-[2px] bg-black sm:h-1'
+          />
+          <h1 className='font-sans text-4xl font-bold tracking-tight text-black sm:text-6xl'>
             10% OFF for students
             <br />
-            <span className='font-nanum-brush text-[25px] sm:text-3xl'>
+            <span className='font-sans text-[25px] sm:text-3xl'>
               *Student ID required
+            </span>
+            <br />
+            <span className='font-sans text-[25px] sm:text-3xl'>
+              *Only On Monday Tuesday
+            </span>
+            <br />
+            <span className='font-sans text-[25px] sm:text-3xl'>
+              *Drinks excluded
+            </span>
+            <br />
+            <span className='font-sans text-[25px] sm:text-3xl'>
+              *Public holiday excluded
+            </span>
+          </h1>
+          <Separator
+            orientation='horizontal'
+            className='my-3 h-[2px] bg-black sm:h-1'
+          />
+          <h1 className='font-sans text-4xl font-bold tracking-tight text-black sm:text-6xl'>
+            <span className='font-sans text-[25px] sm:text-3xl'>
+              *Public holiday 10% surcharge
             </span>
           </h1>
         </div>
