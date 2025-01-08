@@ -65,9 +65,7 @@ export const footerNavigation = {
 export const navigation = [
   { name: 'Home', href: '#' },
   { name: 'Menu', href: '#' },
-  { name: 'Location', href: '#footer-heading' },
-  { name: 'Contact us', href: '#footer-heading' },
-  { name: 'About us', href: '#' }
+  { name: 'Contact us', href: '#footer-heading' }
 ]
 
 export const cards = [

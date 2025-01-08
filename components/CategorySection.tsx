@@ -2,7 +2,7 @@
 
 export default function CategorySection() {
   return (
-    <section aria-labelledby='category-heading' className='bg-background'>
+    <section aria-labelledby='category-heading' className='bg-red-500'>
       <div className='mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8'>
         <h2
           id='category-heading'

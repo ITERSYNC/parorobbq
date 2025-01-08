@@ -21,7 +21,7 @@ export default function Header() {
           <a href='#' className='-m-1.5 p-1.5'>
             <span className='sr-only'>Your Company</span>
             <Image
-              className='h-8 w-auto rounded-full bg-[#F2F2F2]'
+              className='h-8 w-auto rounded-full '
               src='/assets/logo.svg'
               alt='logo'
               width={48}
@@ -36,7 +36,7 @@ export default function Header() {
             href='https://inline.app/booking/-Nr-BBQqdK0NczlWjl-0:inline-live-3/-Nr-BBd6FsMz7P6GfGcX'
             className='text-sm font-semibold leading-6 text-gray-900'
           >
-            <p className='text-lg lg:text-5xl '>
+            <p className='text-lg text-white lg:text-5xl'>
               Authentic Korean BBQ in Melbourne
             </p>
           </a>
@@ -46,7 +46,7 @@ export default function Header() {
         <div className='flex lg:hidden'>
           <button
             type='button'
-            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
+            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5'
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className='sr-only'>Open main menu</span>
@@ -60,7 +60,7 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
-              className='text-5xl font-semibold leading-6 text-gray-900'
+              className='text-5xl font-semibold leading-6 '
             >
               {item.name}
             </a>
@@ -108,7 +108,7 @@ export default function Header() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white'
                   >
                     {item.name}
                   </a>

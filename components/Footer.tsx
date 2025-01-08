@@ -4,7 +4,7 @@ import { footerNavigation } from '@/lib/data'
 
 export default function Footer() {
   return (
-    <footer aria-labelledby='footer-heading' className='text-gray-900'>
+    <footer aria-labelledby='footer-heading' className='text-white'>
       <h2 id='footer-heading' className='sr-only'>
         Footer
       </h2>
@@ -14,13 +14,12 @@ export default function Footer() {
             {/* 1 */}
             <div className='space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0'>
               <div>
-                <h3 className='text-sm font-medium text-gray-900'>Shop</h3>
+                <h3 className='text-sm font-medium'>Shop</h3>
                 <ul role='list' className='mt-6 space-y-6'>
                   {footerNavigation.shop.map(item => (
                     <li key={item.name} className='text-sm'>
                       <a
                         href={item.href}
-                        className='text-gray-900 hover:text-gray-600'
                       >
                         {item.name}
                       </a>
@@ -29,7 +28,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h3 className='text-sm font-medium text-gray-900'>
+                <h3 className='text-sm font-medium'>
                   Opening 7 Days
                 </h3>
                 <ul role='list' className='mt-6 space-y-6'>
@@ -37,7 +36,6 @@ export default function Footer() {
                     <li key={item.name} className='text-sm'>
                       <a
                         href={item.href}
-                        className='text-gray-900 hover:text-gray-600'
                       >
                         {item.name}
                       </a>
@@ -50,7 +48,7 @@ export default function Footer() {
             {/* 2 */}
             <div className='space-y-16 md:grid md:grid-cols-2 md:gap-8 md:space-y-0'>
               <div>
-                <h3 className='text-sm font-medium text-gray-900'>
+                <h3 className='text-sm font-medium '>
                   Contact Us
                 </h3>
                 <ul role='list' className='mt-6 space-y-6'>
@@ -58,7 +56,6 @@ export default function Footer() {
                     <li key={item.name} className='text-sm'>
                       <a
                         href={item.href}
-                        className='text-gray-900 hover:text-gray-600'
                       >
                         {item.name}
                       </a>
@@ -67,13 +64,12 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h3 className='text-sm font-medium text-gray-900'>Connect</h3>
+                <h3 className='text-sm font-medium '>Connect</h3>
                 <ul role='list' className='mt-6 space-y-6'>
                   {footerNavigation.connect.map(item => (
                     <li key={item.name} className='text-sm'>
                       <a
                         href={item.href}
-                        className='text-gray-900 hover:text-gray-600'
                       >
                         {item.name}
                       </a>
@@ -85,10 +81,10 @@ export default function Footer() {
           </div>
           {/* Newsletter */}
           <div className='mt-16 md:mt-16 xl:mt-0'>
-            <h3 className='text-sm font-medium text-gray-900'>
+            <h3 className='text-sm font-medium '>
               Sign up for our newsletter
             </h3>
-            <p className='mt-6 text-sm text-gray-900'>
+            <p className='mt-6 text-sm '>
               The latest deals and savings, sent to your inbox weekly.
             </p>
             <form className='mt-2 flex sm:max-w-md'>
@@ -114,8 +110,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='border-t border-gray-900 py-10'>
-          <p className='text-sm text-gray-900'>
+        <div className='border-t border-white py-10'>
+          <p className='text-sm '>
             Copyright &copy; 2024 Paroro Korean BBQ, Inc.
           </p>
         </div>
