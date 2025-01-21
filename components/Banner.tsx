@@ -51,7 +51,7 @@ export default function Banner() {
       <div className='mx-auto max-w-2xl pb-8 lg:py-36'>
         <div className='text-center'>
           <div className='grid  md:grid-cols-2'>
-            <h1 className='pt-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+            <h2 className='pt-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
               Lunch <br />
               $19.90
               <span className='text-xl sm:text-3xl'>(Weekdays)</span> $43.90
@@ -62,9 +62,9 @@ export default function Banner() {
                 BBQ or sushi for lunch on weekdays <br />
                 *No sushi for lunch on weekends
               </span>
-            </h1>
+            </h2>
 
-            <h1 className='pt-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+            <h2 className='pt-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
               Dinner <br />
               $49.90
               <span className='text-xl sm:text-3xl'>(Weekdays)</span> $54.90
@@ -74,7 +74,7 @@ export default function Banner() {
                 Whats included: Premium Meat BBQ, Korean Hot Foods, Salads,
                 Desserts
               </span>
-            </h1>
+            </h2>
           </div>
           <Separator
             orientation='horizontal'
@@ -120,11 +120,11 @@ export default function Banner() {
             orientation='horizontal'
             className='my-3 h-[2px] bg-white sm:h-1'
           />
-          <h1 className='font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+          <h2 className='font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
             <span className='font-sans text-[25px] sm:text-3xl'>
               *Public holiday 10% surcharge
             </span>
-          </h1>
+          </h2>
         </div>
       </div>
     </div>
