@@ -7,7 +7,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Paroro Korean BBQ | Melbourne Best Korean BBQ Buffet',
+  title: 'Paroro Korean BBQ Melbourne | All-You-Can-Eat Korean BBQ Buffet',
   description: 'Melbourne’s best Korean BBQ restaurant'
 }
 
@@ -27,7 +27,7 @@ export default function RootLayout({
         {/* Add meta description with keywords for better searchability */}
         <meta
           name='description'
-          content="Discover Melbourne's best Korean BBQ experience at Paroro Korean BBQ. Enjoy the finest Korean cuisine in the heart of Australia. Visit us now!"
+          content=' Experience the best Korean BBQ in Melbourne at Paroro, featuring an all-you-can-eat BBQ buffet with delicious meats and authentic. Visit us today!'
         />
         {/* Add additional meta tags for SEO optimization */}
         <meta
