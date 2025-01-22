@@ -81,7 +81,7 @@ export default function Banner() {
             className='my-3 h-[2px] bg-white sm:h-1'
           />
           <h1 className='pt-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl'>
-            Kids special price
+            Kids special price <p> 4-10 years old</p>
             <br />
             <span className='font-sans text-[25px] font-bold sm:text-3xl'>
               Lunch: $11.90(weekday) $25.90(weekends)
