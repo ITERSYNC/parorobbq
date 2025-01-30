@@ -40,7 +40,7 @@ export default function RootLayout({
         />
         <meta
           property='og:description'
-          content='Experience the top Korean BBQ in Melbourne, Australia at Paroro Korean BBQ. Authentic Korean cuisine awaits you.'
+          content='Experience the best Korean BBQ in Melbourne at Paroro, featuring an all-you-can-eat BBQ buffet with delicious meats and authentic. Visit us today!'
         />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='www.paroro.com.au' />

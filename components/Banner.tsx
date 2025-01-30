@@ -80,7 +80,7 @@ export default function Banner() {
             orientation='horizontal'
             className='my-3 h-[2px] bg-white sm:h-1'
           />
-          <h1 className='pt-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl'>
+          <h2 className='pt-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl'>
             Kids special price <p> 4-10 years old</p>
             <br />
             <span className='font-sans text-[25px] font-bold sm:text-3xl'>
@@ -91,13 +91,15 @@ export default function Banner() {
               />
               Dinner: $29.90(weekday) $32.90(weekends)
             </span>
-          </h1>
-
+          </h2>
+          Experience the best Korean BBQ in Melbourne at Paroro, featuring an
+          all-you-can-eat BBQ buffet with delicious meats and authentic. Visit
+          us today!
           <Separator
             orientation='horizontal'
             className='my-3 h-[2px] bg-white sm:h-1'
           />
-          <h1 className='font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
+          <h2 className='font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl'>
             10% OFF for students
             <br />
             <span className='font-sans text-[25px] sm:text-3xl'>
@@ -115,7 +117,7 @@ export default function Banner() {
             <span className='font-sans text-[25px] sm:text-3xl'>
               *Public holiday excluded
             </span>
-          </h1>
+          </h2>
           <Separator
             orientation='horizontal'
             className='my-3 h-[2px] bg-white sm:h-1'
