@@ -23,7 +23,7 @@
     "embla-carousel-react": "^8.0.0-rc19",
     "gsap": "^3.12.5",
     "lucide-react": "^0.311.0",
-    "next": "^15.0.2",
+    "next": "15.0.7",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
